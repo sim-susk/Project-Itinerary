@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="navbar">
     <b-navbar toggleable="sm" type="light" variant="light">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
@@ -40,3 +40,9 @@ export default {
 </script>
 
 
+<style>
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+</style>
