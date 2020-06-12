@@ -20,10 +20,10 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   mode: 'history',
   routes: [
-    { path: '/aboutUs', component: aboutUs },
-    { path: '/home', component: home },
-    { path: '/itinerary', component: itinerary },
-    { path: '/places', component: places },
+    { path: '/aboutUs', component: AboutUs },
+    { path: '/home', component: Home },
+    { path: '/itinerary', component: Itinerary },
+    { path: '/places', component: Places },
   ],
 });
 
