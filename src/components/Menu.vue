@@ -7,8 +7,10 @@
 
     <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav>
+        <b-nav-item>
         <b-nav-text>Navbar text</b-nav-text>
       </b-navbar-nav>
+  
     </b-collapse>
   </b-navbar>
 </div>
