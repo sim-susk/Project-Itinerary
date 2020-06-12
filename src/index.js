@@ -5,8 +5,7 @@ import Home from './components/Home';
 import Itinerary from './components/Itinerary';
 import Places from './components/Places';
 import App from './components/App';
-import Menu from './components/Menu';
-import places from './components/places';
+
 
 import './index.html';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
@@ -20,10 +19,10 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   mode: 'history',
   routes: [
-    { path: '/aboutUs', component: aboutUs },
-    { path: '/home', component: home },
-    { path: '/itinerary', component: itinerary },
-    { path: '/places', component: places },
+    { path: '/aboutUs', component: AboutUs },
+    { path: '/home', component: Home },
+    { path: '/itinerary', component: Itinerary },
+    { path: '/places', component: Places },
   ],
 });
 
