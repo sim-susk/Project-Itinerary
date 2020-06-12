@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="menu">
     <Menu />
   </div>
 </template>
@@ -22,4 +22,7 @@ export default {
 html {
   font-family: sans-serif;
 }
+
+
 </style>
+
