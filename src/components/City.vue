@@ -35,7 +35,7 @@ export default {
 .img {
   max-height: 350px;
   padding-bottom: 20px;
-  border-radius: 20px;
+  
 }
 
 * {

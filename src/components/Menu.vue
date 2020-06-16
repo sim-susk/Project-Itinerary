@@ -1,7 +1,10 @@
 <template>
   <div>
-    <b-navbar toggleable="sm" type="light" variant="light">
+    <b-navbar toggleable="sm">
+     <!-- type="light" variant="light" -->
+    
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+    <img class="img-menu" :src="`./assets/img/bg-img.png`" />
 
       <b-navbar-brand></b-navbar-brand>
 
@@ -45,5 +48,39 @@ export default {
 .navbar {
   margin: 0;
   padding: 0;
+  
 }
+
+.navbar {
+background-color: rgb(254, 250, 242);
+
+}
+
+.navbar.navbar-light.navbar-expand-sm {
+ 
+}
+ 
+
+#nav-text-collapse.navbar-collapse.collapse {
+text-align: center;
+ justify-content: center;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.navbar-text {
+  text-decoration: underline;
+  /* nefunguje barva a styl*/
+  color: rgb(0 115 105);
+  font-style: bold;
+
+}
+
+.img-menu {
+  width: 120px;
+  height: 100px;
+
+  
+}
+
 </style>
