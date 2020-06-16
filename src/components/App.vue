@@ -1,6 +1,7 @@
 <template>
-  <div class="menu">
+  <div>
     <Menu />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -22,7 +23,5 @@ export default {
 html {
   font-family: sans-serif;
 }
-
-
 </style>
 

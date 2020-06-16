@@ -22,7 +22,7 @@ const router = new VueRouter({
     { path: '/aboutUs', component: AboutUs },
     { path: '/home', component: Home },
     { path: '/itinerary', component: Itinerary },
-    { path: '/places', component: Places },
+    { path: '/places', component: Places }
   ],
 });
 

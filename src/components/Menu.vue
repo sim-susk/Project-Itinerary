@@ -22,7 +22,6 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <router-view></router-view>
   </div>
   <!-- <router-link to="/aboutUs">O nás</router-link>
     <router-link to="/home">Domů</router-link>
