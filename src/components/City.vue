@@ -1,15 +1,12 @@
 <template>
   <div class="city">
-    {{ name }}
-    {{ title }}
-    {{ text }}
-    {{ imgSrc }}
-    {{ imgAlt }}
+    <h1 class="name" {{ name }}></h1>
+    <h2 class="title" {{ title }}></h2>
+    <p class="text" {{ text }}></p>
 
-<!-- <img :src="city.imgSrc" alt="city.altSrc" />
-      <div class="name">{{ city.name }}></div>
-      <div class="title">{{ city.title }}></div>
-      <div class="text">{{ city.text }}></div> -->
+    <img class="img" :src="`./assets/img-places/${imgSrc}`" />
+    
+
 
   </div>
 </template>
@@ -18,12 +15,18 @@
 <script>
 export default {
   name: "City",
-  props: ["name", "title", "text", "imgSrc", "imgAlt"]
+  props: ["name", "title", "text", "imgSrc", "altSrc"]
 }
 </script>
 
 
-<style lang="less" scoped>
-// tady css pro city
+<style>
 
+.city {
+  height: 90px;
+  width: 100px;
+  border: 3px solid brown;
+  background-color: green;
+  margin: 10px;
+}
 </style>

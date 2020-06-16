@@ -7,7 +7,7 @@ export const cities = [
 
     text: "Město Mšeno (240-403 m n. m.) je vstupní branou do CHKO Kokořínsko. Kokořínsko je lesnatý kraj, plný skalních útvarů, roklí a romantických zákoutí, protkaný množstvím turistických atrakcí a cyklistických stezek. Městské lázně Mšeno jsou ojedinělým architektonickým dílem ve stylu art déco a patří mezi skvosty Středočeského kraje. Postaveny byly v roce 1932. Jsou místem příjemného odpočinku, voda ze skalního pramene vás zaručeně příjemně zchladí i v tom nejparnějším létě. Přijďte si vychutnat jejich jedinečnou atmosféru!",
 
-    imgSrc: "assets/img-places/Mseno.JPG",
+    imgSrc: "Mseno.jpeg",
     altSrc: "Mšeno"
   },
   {

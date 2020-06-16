@@ -3,10 +3,11 @@
 
 <City
     v-for="(city, index) in cities" :key="index"
-    :name="cities.name"
-    :title="cities.title"
-    :text="cities.text"
-    :img="cities.img"
+    :name="city.name"
+    :title="city.title"
+    :text="city.text"
+    :imgSrc="city.imgSrc"
+    :altSrc="city.altSrc"
     />
       
     
