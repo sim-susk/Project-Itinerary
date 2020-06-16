@@ -3,7 +3,7 @@
     <b-navbar toggleable="sm" type="light" variant="light">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
-      <b-navbar-brand>BootstrapVue</b-navbar-brand>
+      <b-navbar-brand></b-navbar-brand>
 
       <b-collapse id="nav-text-collapse" is-nav>
         <b-navbar-nav>
@@ -22,7 +22,8 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <router-view></router-view>
+    
+    
   </div>
   <!-- <router-link to="/aboutUs">O nás</router-link>
     <router-link to="/home">Domů</router-link>
