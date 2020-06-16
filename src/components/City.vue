@@ -1,8 +1,8 @@
 <template>
   <div class="city">
-    <h1 class="name" {{ name }}></h1>
-    <h2 class="title" {{ title }}></h2>
-    <p class="text" {{ text }}></p>
+    <h1 class="name">{{ name }}</h1>
+    <h2 class="title">{{ title }}</h2>
+    <p class="text">{{ text }}</p>
 
     <img class="img" :src="`./assets/img-places/${imgSrc}`" />
     
@@ -21,12 +21,47 @@ export default {
 
 
 <style>
-
 .city {
-  height: 90px;
-  width: 100px;
-  border: 3px solid brown;
-  background-color: green;
-  margin: 10px;
+   text-align: center;
+   background-color: rgb(254, 250, 242);
+   border-radius: 40px;
 }
+.name, .title, .text {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.img {
+  max-height: 350px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ 
+ h2 {
+  font-style: italic;
+  
+ }
+ 
+ .kontejner {
+   display: row;
+   margin: 10px;
+   width: 33%;
+ }
+ 
+ .places {
+   /* display: flex; */
+   padding: 20px;
+   margin: 20px;
+   
+   
+ }
+
+
+
 </style>
