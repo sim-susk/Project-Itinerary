@@ -13,7 +13,7 @@
           <b-nav-item to="/aboutUs">
             <b-nav-text>O nás</b-nav-text>
           </b-nav-item>
-          <b-nav-item to="/itinerary">
+          <b-nav-item to="/itinerary/2">
             <b-nav-text>Plánovač</b-nav-text>
           </b-nav-item>
           <b-nav-item to="/places">

@@ -21,13 +21,15 @@ const router = new VueRouter({
   routes: [
     { path: '/aboutUs', component: AboutUs },
     { path: '/home', component: Home },
-    { path: '/itinerary', component: Itinerary },
-    { path: '/places', component: Places }
+    { path: '/itinerary/:id', component: Itinerary },
+    { path: '/places', component: Places },
+    //{ path: '*', component: PageNotFound }
   ],
 });
 
 new Vue({
   el: '#app',
+  mode: 'history',
   router: router,
   render: h => h(App),
 });

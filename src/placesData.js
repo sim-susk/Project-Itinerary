@@ -1,6 +1,4 @@
 export const cities = [
-
-
   {
     name: "Mšeno",
     title: "Letní koupání v prvorepublikových lázních Mšeno",
@@ -8,7 +6,7 @@ export const cities = [
     text: "Město Mšeno (240-403 m n. m.) je vstupní branou do CHKO Kokořínsko. Kokořínsko je lesnatý kraj, plný skalních útvarů, roklí a romantických zákoutí, protkaný množstvím turistických atrakcí a cyklistických stezek. Městské lázně Mšeno jsou ojedinělým architektonickým dílem ve stylu art déco a patří mezi skvosty Středočeského kraje. Postaveny byly v roce 1932. Jsou místem příjemného odpočinku, voda ze skalního pramene vás zaručeně příjemně zchladí i v tom nejparnějším létě. Přijďte si vychutnat jejich jedinečnou atmosféru!",
 
     imgSrc: "assets/img-places/Mseno.JPG",
-    altSrc: "Mšeno"
+    altSrc: "Mšeno",
   },
   {
     name: "Hejnice",
@@ -70,35 +68,35 @@ export const cities = [
     title: "Město pohádek a fantazie",
 
     text: 'Vstupní branou do Českého ráje a do Prachovských skal je pohádkové město Jičín. Město je ideálním východištěm turistických výletů, ať již do Prachovských skal nebo na romantická místa se zříceninami starých hradů. Navštivte každoroční festival "Jičín - město pohádky", který přináší množství představení, koncertů a aktivit, ale také možnosti výtvarně se projevit.'
-},
-{
-  name: "Broumov",
-  title: "Zažijte noc kde mniši dávají dobrou noc",
+  },
+  {
+    name: "Broumov",
+    title: "Zažijte noc kde mniši dávají dobrou noc",
 
-  text: "Život města, ležícího v kotlině téměř na česko-polských hranicích, se po staletí točil kolem benediktinského kláštera. Ten je dodnes společně s okolní přírodou, tedy s hřebenem pohraničních Javořích hor, hlavním turistickým magnetem Broumovska. Unikátní ubytování v mnišských celách, si raději zarezervujte několik týdnů dopředu. Znalce piva potěší prohlídka pivovaru, milovníci přírodních krás se mohou vypravit do skalního bludiště Broumovských stěn anebo se na město podívat z rozhledny na Ruprechtickém Špičáku."
-},
-{
-  name: "Hanácké Benátky - Litovel",
-  title: "Město rozkročené nad vodou",
+    text: "Život města, ležícího v kotlině téměř na česko-polských hranicích, se po staletí točil kolem benediktinského kláštera. Ten je dodnes společně s okolní přírodou, tedy s hřebenem pohraničních Javořích hor, hlavním turistickým magnetem Broumovska. Unikátní ubytování v mnišských celách, si raději zarezervujte několik týdnů dopředu. Znalce piva potěší prohlídka pivovaru, milovníci přírodních krás se mohou vypravit do skalního bludiště Broumovských stěn anebo se na město podívat z rozhledny na Ruprechtickém Špičáku."
+  },
+  {
+    name: "Hanácké Benátky - Litovel",
+    title: "Město rozkročené nad vodou",
 
-  text: "Kde byste hledali vůbec nejstarší most na Moravě? Nestojí ani v Olomouci, ani v Brně, ale ve městě, kde to bez mostů zkrátka nešlo: v Litovli. Přestože k nejbližšímu moři to odtud je pár stovek kilometrů, městu se říká Hanácké Benátky. Proč? Město totiž vzniklo na sedmi ramenech řeky Moravy, ačkoli dnes už se jich Litovlí klikatí jen šest. Jednou z kuriozit hlavního litovelského náměstí tak je schodiště vedoucí k hladině podzemní řeky."
-},
-{
-  name: "Moravské Toskánsko - Kyjov",
-  title: "Ráj pro fotografy",
+    text: "Kde byste hledali vůbec nejstarší most na Moravě? Nestojí ani v Olomouci, ani v Brně, ale ve městě, kde to bez mostů zkrátka nešlo: v Litovli. Přestože k nejbližšímu moři to odtud je pár stovek kilometrů, městu se říká Hanácké Benátky. Proč? Město totiž vzniklo na sedmi ramenech řeky Moravy, ačkoli dnes už se jich Litovlí klikatí jen šest. Jednou z kuriozit hlavního litovelského náměstí tak je schodiště vedoucí k hladině podzemní řeky."
+  },
+  {
+    name: "Moravské Toskánsko - Kyjov",
+    title: "Ráj pro fotografy",
 
-  text: "Je to jedna z nejpřitažlivějších lokalit v České republice, kam se lidé vydávají jen proto, aby pořídili skvostné fotografie. Dlouhé pásy hnědých či zelených polí se táhnou až k obzoru a jakoby nekončí. Malebně zvlněnou krajinu jižní Moravy jen sem tam doplňuje osamělý strom, remízek nebo bílá kaplička. Nenadarmo fotografové nazývají krajinu v okolí Kyjova Moravským Toskánskem."
-},
-{
-  name: "Hradec nad Moravicí",
-  title: "Věž Červéného zámku stejná jako v Disneylandu",
+    text: "Je to jedna z nejpřitažlivějších lokalit v České republice, kam se lidé vydávají jen proto, aby pořídili skvostné fotografie. Dlouhé pásy hnědých či zelených polí se táhnou až k obzoru a jakoby nekončí. Malebně zvlněnou krajinu jižní Moravy jen sem tam doplňuje osamělý strom, remízek nebo bílá kaplička. Nenadarmo fotografové nazývají krajinu v okolí Kyjova Moravským Toskánskem."
+  },
+  {
+    name: "Hradec nad Moravicí",
+    title: "Věž Červéného zámku stejná jako v Disneylandu",
 
-  text: "Jižně od Opavy leží město, které známe především díky romantickému zámku –  Červený zámek v Hradci nad Moravicí. Rozlehlý komplex s masivní hodinovou věží a vstupní branou je připoďobnován k pohádkovému zámku Disneyland. Avšak zapomíná se na celou řadu zajímavostí v okolí, od vyhlídek a rozhleden přes křížovou cestu a kalvárii až po řeku Moravici, jejíž údolí od Kružberku po Hradec patří k nejkrásnějším říčním údolím v Česku."
-},
-{
-  name: "Hukvaldy",
-  title: "Místo s mnoha možnostmi",
+    text: "Jižně od Opavy leží město, které známe především díky romantickému zámku –  Červený zámek v Hradci nad Moravicí. Rozlehlý komplex s masivní hodinovou věží a vstupní branou je připoďobnován k pohádkovému zámku Disneyland. Avšak zapomíná se na celou řadu zajímavostí v okolí, od vyhlídek a rozhleden přes křížovou cestu a kalvárii až po řeku Moravici, jejíž údolí od Kružberku po Hradec patří k nejkrásnějším říčním údolím v Česku."
+  },
+  {
+    name: "Hukvaldy",
+    title: "Místo s mnoha možnostmi",
 
-  text: "Impozantní zřícenina středověkého strážního hradu, rozsáhlá obora s barokní vstupní bránou, pomník Lišky Bystroušky či rodný dům Leoše Janáčka ve staré škole, to všechno nabízejí Hukvaldy, půvabná obec v malebném podhůří Beskyd na úpatí Palkovických hůrek. My vás však tentokrát zavedeme do skleníků s velkým množstvím tropických rostlin a exotických zvířat což je jednou z dalších atrakcí co navštívit v Hukvaldech. Uvidíte masožravé rostliny, bonsaje, či kaktusy, ale hlavně dětem udělají radost třeba mluvící papoušci nebo pták Loskuták, který je nejlepším imitátorem lidského hlasu."
-},
+    text: "Impozantní zřícenina středověkého strážního hradu, rozsáhlá obora s barokní vstupní bránou, pomník Lišky Bystroušky či rodný dům Leoše Janáčka ve staré škole, to všechno nabízejí Hukvaldy, půvabná obec v malebném podhůří Beskyd na úpatí Palkovických hůrek. My vás však tentokrát zavedeme do skleníků s velkým množstvím tropických rostlin a exotických zvířat což je jednou z dalších atrakcí co navštívit v Hukvaldech. Uvidíte masožravé rostliny, bonsaje, či kaktusy, ale hlavně dětem udělají radost třeba mluvící papoušci nebo pták Loskuták, který je nejlepším imitátorem lidského hlasu."
+  },
 ]

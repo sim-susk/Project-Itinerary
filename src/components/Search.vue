@@ -1,5 +1,6 @@
 <template>
   <div>
+    {{city}}
     <input type="checkbox" id="church" value="church" v-model="selection" />
     <label for="church">church</label>
     <input type="checkbox" id="history" value="history" v-model="selection" />
@@ -17,6 +18,7 @@ export default {
   name: "Search",
 
   props: {
+    city: String,
     msg: String
   },
   data: () => ({ selection: [] }),
@@ -27,11 +29,13 @@ export default {
   },
   computed: {
     places() {
-      return kutnaHora.filter(place => {
-        return place.tag.some(tag => {
-          return this.selection.includes(tag);
+      return kutnaHora
+        .filter(place => place.city == this.city)
+        .filter(place => {
+          return place.tag.some(tag => {
+            return this.selection.includes(tag);
+          });
         });
-      });
     }
   }
 };
