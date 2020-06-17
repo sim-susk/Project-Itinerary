@@ -1,9 +1,18 @@
 export const cities = [
-
-
+  
+  
+  {
+    name: "Loket",
+    title: "Hrad Loket a české Carcassonne",
+  
+    text: "Klíč k českému království, bývalá věznice a románsko-gotická pevnost: to všechno je Loket. Na skalách nad klikatými meandry řeky Ohře stojí už osm set let a střeží okolní krajinu stejně poctivě jako francouzská středověká pevnost Carcassonne: právě ta Loket v lecčems připomíná. Navštivte Loket celoročně, nechte se unést krásou romantického městečka, dopřejte si procházku krajinou s výhledem na meandry řeky Ohře a v zimním období se zde navíc můžete těšit z vůní svařeného vína a horké medoviny podávané na tradičních vánočních trzích.",
+  
+    imgSrc: "loket.jpg",
+    altSrc: "Loket"
+  },
   {
     name: "Mšeno",
-    title: "Letní koupání v prvorepublikových lázních Mšeno",
+    title: "Koupání v prvorepublikových lázních",
 
     text: "Město Mšeno (240-403 m n. m.) je vstupní branou do CHKO Kokořínsko. Kokořínsko je lesnatý kraj, plný skalních útvarů, roklí a romantických zákoutí, protkaný množstvím turistických atrakcí a cyklistických stezek. Městské lázně Mšeno jsou ojedinělým architektonickým dílem ve stylu art déco a patří mezi skvosty Středočeského kraje. Postaveny byly v roce 1932. Jsou místem příjemného odpočinku, voda ze skalního pramene vás zaručeně příjemně zchladí i v tom nejparnějším létě. Přijďte si vychutnat jejich jedinečnou atmosféru!",
 
@@ -45,15 +54,6 @@ export const cities = [
 
     imgSrc: "slavonice.jpg",
     altSrc: "Slavonice"
-  },
-  {
-    name: "Loket",
-    title: "Hrad Loket a české Carcassonne",
-
-    text: "Klíč k českému království, bývalá věznice a románsko-gotická pevnost: to všechno je Loket. Na skalách nad klikatými meandry řeky Ohře stojí už osm set let a střeží okolní krajinu stejně poctivě jako francouzská středověká pevnost Carcassonne: právě ta Loket v lecčems připomíná. Navštivte Loket celoročně, nechte se unést krásou romantického městečka, dopřejte si procházku krajinou s výhledem na meandry řeky Ohře a v zimním období se zde navíc můžete těšit z vůní svařeného vína a horké medoviny podávané na tradičních vánočních trzích.",
-
-    imgSrc: "loket.jpg",
-    altSrc: "Loket"
   },
   {
     name: "Stříbro",

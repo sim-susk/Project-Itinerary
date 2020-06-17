@@ -14,17 +14,18 @@
             <b-nav-text>Domů</b-nav-text>
           </b-nav-item>
           <b-nav-item to="/aboutUs">
-            <b-nav-text>O nás</b-nav-text>
-          </b-nav-item>
-          <b-nav-item to="/itinerary">
-            <b-nav-text>Plánovač</b-nav-text>
+            <b-nav-text>O aplikaci</b-nav-text>
           </b-nav-item>
           <b-nav-item to="/places">
             <b-nav-text>Přehled měst</b-nav-text>
           </b-nav-item>
+          <b-nav-item to="/itinerary">
+            <b-nav-text>Plánovač</b-nav-text>
+          </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    
     
     
   </div>
@@ -45,6 +46,7 @@ export default {
 
 
 <style>
+/* Nejmenší rozlišení */
 .navbar {
   margin: 0;
   padding: 0;
@@ -52,29 +54,26 @@ export default {
 }
 
 .navbar {
-background-color: rgb(254, 250, 242);
+background-color: rgb(254, 246, 242);
 
 }
-
-.navbar.navbar-light.navbar-expand-sm {
  
-}
- 
-
-#nav-text-collapse.navbar-collapse.collapse {
-text-align: center;
- justify-content: center;
-  text-decoration: underline;
+.navbar-collapse.collapse {
+  text-align: center;
+  justify-content: center;
   padding: 0;
 }
 
 .navbar-text {
-  text-decoration: underline;
-  /* nefunguje barva a styl*/
-  color: rgb(0 115 105);
+  /* nefunguje barva a styl pisma*/
+  color: rgb(132, 178, 135);
   font-style: bold;
 
+  background-color:  rgb(215, 120, 111);
+  border-radius: 18px;
+  width: 120px;
 }
+
 
 .img-menu {
   width: 120px;
@@ -82,5 +81,11 @@ text-align: center;
 
   
 }
+
+/* Tablet */
+ @media screen and (min-width: 541px) and (max-width:960px) 
+
+/* PC */
+@media screen and (min-width: 961px)
 
 </style>

@@ -21,46 +21,86 @@ export default {
 
 
 <style>
+
+/* Nejmenší rozlišení */
+
+  * {
+    box-sizing: border-box;
+  }
+
 .city {
-   text-align: center;
-   background-color: rgb(254, 250, 242);
-   border-radius: 40px;
+  display: block;
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+  border: solid 3px rgb(64, 63, 62);
 }
 .name, .title, .text {
   text-align: center;
-  margin-top: 10px;
-  padding: 10px;
+  padding: 0 10px 0 10px;
+  display: block;
+  text-decoration-color: rgb(0, 115, 105);
 }
 
 .img {
   max-height: 350px;
+  max-width: 250px;
   padding-bottom: 20px;
-  
+  overflow: auto;
+  background-color:transparent;
 }
 
-* {
-  box-sizing: border-box;
+h1.name {
+  font-size: 2em;
+  font-style: bold;
 }
 
- 
- h2 {
+ h2.title {
+  font-size: 1em;
   font-style: italic;
   
  }
- 
- .kontejner {
-   display: row;
-   margin: 10px;
-   width: 33%;
+
+ p.text {
+   font-size: 0.65em;
+   line-height: 1.3;
+   text-align: justify;
+   /* background-image: src(/image().png); */
  }
- 
+
  .places {
-   /* display: flex; */
-   padding: 20px;
-   margin: 20px;
-   
+   padding: 10px;
+   margin: 10px;
+   display: block;;
    
  }
+/* Tablet */
+ @media screen and (min-width: 541px) and (max-width:960px) {
+   .city {
+     /* pri vsech rozlisenich stejny???? */
+     /* font-size: 3em; */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+   }
+ 
+.places {
+  display: flex;
+  width: auto;
+  flex-grow: 2;
+  
+}
+ }
+
+
+
+/* PC */
+@media screen and (min-width: 961px) {
+  .city {
+
+  }
+}
 
 
 
