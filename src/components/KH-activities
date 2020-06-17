@@ -1,0 +1,47 @@
+{
+  name: "Chrám sv. Barbory",
+  title: "Navštivte jednu z památek UNESCO v Kutné Hoře",
+
+  text: "Impozantní stavba s odkazem na slávu a bohatství Kutné Hory. Největší podíl na rozkvětu středověkého města patří horníkům, kteří právě tento chrám zasvětili panně Barboře, svaté ochárnkyni, mučednici a přímluvkyně za doboru smrt. Stavba z pozdní gotiky se řadí mezi čtyři stavby katedrálního typu v Čechách.",
+
+  imgSrc: ".jpg",
+  altSrc: ""
+},
+
+{
+  name: "Dačického dům",
+  title: "Interaktivní expozice plná historie a informací o Kutné Huře",
+
+  text: "Nejen zajímvou expozici, ale i bohatou architekturu nabízí Dačického dům, který určitě stojí zato navštívit. Dům prošel rozsáhlou přestavbou po roce 1500, návštěvník ho může prozkoumat od sklepa po půdu, zároveň se nechat provést interaktivní expozicí, která současně představuje organizaci UNESCO a poskytne tak odpověď na otázku proč právě Kutná Hora je součástí rodiny nejvýznamnějších pamětihodností světa!",
+
+  imgSrc: ".jpg",
+  altSrc: " "
+},
+
+{
+    name: "Chrám Sv. Barbory",
+    tag: ["church", "history"],
+    latitude: 49.944939,
+    longitude: 15.263566,
+    outputName: "Chrám Sv. Barbory",
+    outputAddress: "Barborská, 284 01 Kutná Hora",
+    outputDescription: "Památka UNESCO, klenot pozdní gotiky a jedna ze čtyř staveb katedrálního typu v Čechách.",
+  },
+  {
+    name: "Katedrála Nanebevzetí Panny Marie a svatého Jana Křtitele",
+    tag: ["church", "history"],
+    latitude: 49.944939,
+    longitude: 15.263566,
+    outputName: "Katedrála Nanebevzetí Panny Marie a svatého Jana Křtitele",
+    outputAddress: "U Zastávky 280, Sedlec, 284 03 Kutná Hora",
+    outputDescription: "Památka UNESCO od roku 1995 je koncentním chrámem bývalého nejstaršího cisterciáckého opátství v Čechách.",
+  },
+  {
+    name: "Alchymistická dílna",
+    tag: ["museum", "history"],
+    latitude: 49.949815,
+    longitude: 15.268534,
+    outputName: "Alchymistická dílna",
+    outputAddress: "Palackého nám. 377, Vnitřní Město, 284 01 Kutná Hora",
+    outputDescription: "Zavede Vás do 15. století, kdy věhlasní učenci se svými pomocníky hledali kámen mudrců a bádali, kterak změnit kovy ve zlato.",
+  },

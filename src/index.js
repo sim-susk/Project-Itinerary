@@ -5,9 +5,8 @@ import Home from './components/Home';
 import Itinerary from './components/Itinerary';
 import Places from './components/Places';
 import App from './components/App';
-
-
 import './index.html';
+
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
