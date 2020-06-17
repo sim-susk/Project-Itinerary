@@ -1,5 +1,6 @@
-export const kutnaHora = [
+export const places = [
   {
+    city: 1,
     name: "Chrám Sv. Barbory",
     tag: ["church", "history"],
     latitude: 49.944939,
@@ -9,6 +10,7 @@ export const kutnaHora = [
     outputDescription: "Impozantní stavba s odkazem na slávu a bohatství Kutné Hory. Stavba z pozdní gotiky se řadí mezi čtyři stavby katedrálního typu v Čechách.",
   },
   {
+    city: 1,
     name: "Katedrála Nanebevzetí Panny Marie a svatého Jana Křtitele",
     tag: ["church", "history"],
     latitude: 49.944939,
@@ -18,6 +20,7 @@ export const kutnaHora = [
     outputDescription: "Další ze seznamu památek UNESCO, s bohatou historií a významnými architektonickými prvky. Zajímavostí je chrámová pokladnice, kde můžete objevit jeden z nejvzácnějších pokladů střední Evropy - originál sedlecké monstrance.",
   },
   {
+    city: 1,
     name: "Alchymistická dílna",
     tag: ["museum", "history", "kids"],
     latitude: 49.949815,
@@ -27,6 +30,7 @@ export const kutnaHora = [
     outputDescription: "Poznejte nástroje věhlasných badatelů, kteří se vydávali za honbou po kameni mudrců a možná objevíte i pravého golema!",
   },
   {
+    city: 1,
     name: "Dačického dům",
     tag: ["exposition", "history"],
     latitude: 49.9485464,
@@ -36,6 +40,7 @@ export const kutnaHora = [
     outputDescription: "Nejen zajímavou expozici, ale i bohatou architekturu nabízí Dačického dům, který můžete prozkoumat od sklepa po půdu. Nechte se provést interaktivní expozicí, která představuje organizaci UNESCO a poskytne tak odpověď na otázku proč právě Kutná Hora je součástí rodiny nejvýznamnějších pamětihodností světa!",
   },
   {
+    city: 1,
     name: "Kino Modrý kříž",
     tag: ["cinema", "fun"],
     latitude: 49.9496704,
@@ -45,6 +50,7 @@ export const kutnaHora = [
     outputDescription: "Kombinace kuboexpresionistické architektury ve městě a jeden z nejmodernějších filmových sálů ve standardu DCI může nabídnout až 300 návštěvníkům nezapomenutelné filmové zážitky.",
   },
   {
+    city: 1,
     name: "Muzeum čokolády a čokoládovna Kutná Hora",
     tag: ["museum", "kids"],
     latitude: 49.948845,
@@ -54,6 +60,7 @@ export const kutnaHora = [
     outputDescription: "Malé muzeum místní čokoládovny Koukol & Michera, kde můžete ochutnat čokoládu z celého světa.",
   },
   {
+    city: 1,
     name: "Bobová a motokárová dráha",
     tag: ["sport", "fun", "kids"],
     latitude: 49.946416,
@@ -63,6 +70,7 @@ export const kutnaHora = [
     outputDescription: "Druhá nejdelší bobová dráha v Evropě, která je unikátní nejen svou délkou 1565 m ale také svým položením na třech svazcích.",
   },
   {
+    city: 1,
     name: "Solná jeskyně",
     tag: ["relax", "health"],
     latitude: 49.947398,
@@ -72,6 +80,7 @@ export const kutnaHora = [
     outputDescription: "Vydejte se za mořským klimatem a nemusíte cestovat přes půlku Evropy. Solí prosycené minerály, nabízejí obdobný požitek jako v přímořských destinacích.",
   },
   {
+    city: 1,
     name: "Zrcadlové bludiště",
     tag: ["relax", "fun", "kids"],
     latitude: 49.949538,
@@ -81,6 +90,7 @@ export const kutnaHora = [
     outputDescription: "Zrcadlové bludiště nabízí křišťálové-skleněné bludiště se 150 zrcadly a čirými skly a zároveň i dětské bludiště se 40 zrcadly. ",
   },
   {
+    city: 1,
     name: "Muzeum Tabáku",
     tag: ["museum", "fun"],
     latitude: 49.960228,
@@ -90,6 +100,7 @@ export const kutnaHora = [
     outputDescription: "Expozice nabízí nejen spoustu zajímavých informací o tabáku a jeho zpracování, ale také je k dispozici velká sbírka starých krabiček od cigaret, které se v Kutné Hoře vyráběly.",
   },
   {
+    city: 1,
     name: "Veký rybník",
     tag: ["swim", "fun", "kids"],
     latitude: 49.924711,
@@ -99,6 +110,7 @@ export const kutnaHora = [
     outputDescription: "Velký rybník nabízí koupání v prostředí krásné zalesněné krajiny, v křišťálově čisté vodě, s písečným břehem a pozvolným přístupem do vody. ",
   },
   {
+    city: 1,
     name: "Po vinicích na kole",
     tag: ["fun", "wine", "ride"],
     latitude: 49.9494518,
@@ -108,6 +120,7 @@ export const kutnaHora = [
     outputDescription: "Popis trasy: 4,835 km; cyklotrasa č. 0091. Naučná cyklotrasa vás zavede ze srdce Kutné Hory, vinicemi až na severní okraj města. Ideální pro milovníky dobrého vína a zdravého pohybu.",
   },
   {
+    city: 1,
     name: "Procházka údolím Vrchlice",
     tag: ["walk", "fun", "nature"],
     latitude: 49.9483367,
@@ -117,6 +130,7 @@ export const kutnaHora = [
     outputDescription: "Královská procházka podél říčky Vrchlice vás zavede přes kamenný most přímo do údolí, kde můžete cestou potkat několik dochovaných mlýnů. Vydejte se po červené s cílem u Velkého Rybníka. ",
   },
   {
+    city: 1,
     name: "Park Heroland",
     tag: ["play", "fun", "nature"],
     latitude: 49.877774,
