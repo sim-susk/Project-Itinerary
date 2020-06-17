@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{city}}
+    {{ city }}
     <input type="checkbox" id="church" value="church" v-model="selection" />
     <label for="church">church</label>
     <input type="checkbox" id="history" value="history" v-model="selection" />
@@ -13,37 +13,39 @@
         <input type="checkbox" id="selected" />
         {{ place.name }}
       </h2>
-      <p>{{place.outputAddress}}</p>
-      <p>{{place.outputDescription}}</p>
+      <p>{{ place.outputAddress }}</p>
+      <p>{{ place.outputDescription }}</p>
     </div>
+    <Map :places="places" />
   </div>
 </template>
 <script>
 import { places } from "../placesItinerary.js";
-
+import Map from "./Map.vue";
 export default {
   name: "Search",
 
   props: {
     city: String,
-    msg: String
+    msg: String,
   },
   data: () => ({ selection: ["church"] }),
   methods: {
     getData() {
       console.log("clicked");
-    }
+    },
   },
   computed: {
     places() {
       return places
-        .filter(place => place.city == this.city)
-        .filter(place => {
-          return place.tag.some(tag => {
+        .filter((place) => place.city == this.city)
+        .filter((place) => {
+          return place.tag.some((tag) => {
             return this.selection.includes(tag);
           });
         });
-    }
-  }
+    },
+  },
+  components: { Map },
 };
 </script>
