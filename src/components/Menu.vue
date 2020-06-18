@@ -17,7 +17,15 @@
             <b-nav-text>O aplikaci</b-nav-text>
           </b-nav-item>
           <b-nav-item to="/places">
-            <b-nav-text>Přehled měst</b-nav-text>
+            <!-- <b-nav-text>Přehled měst</b-nav-text> -->
+
+       <b-nav-item-dropdown text="Přehled měst" right class="navbar-text">
+          <b-dropdown-item href="Search">Hledej podle krajů</b-dropdown-item>
+          <b-dropdown-item href="Top10">Top 10 měst</b-dropdown-item>
+          <b-dropdown-item href="TravelWW">Cestujeme světově</b-dropdown-item>
+          <b-dropdown-item href="Recommend">Doporučujeme</b-dropdown-item>
+        </b-nav-item-dropdown>
+
           </b-nav-item>
           <b-nav-item to="/itinerary">
             <b-nav-text>Plánovač</b-nav-text>
@@ -50,12 +58,7 @@ export default {
 .navbar {
   margin: 0;
   padding: 0;
-  
-}
-
-.navbar {
-background-color: rgb(254, 246, 242);
-
+  background-color: rgb(254, 246, 242);
 }
  
 .navbar-collapse.collapse {
@@ -64,16 +67,25 @@ background-color: rgb(254, 246, 242);
   padding: 0;
 }
 
+
 .navbar-text {
-  /* nefunguje barva a styl pisma*/
+  /* nefunguje barva a styl pisma, zarovnani na sted*/
   color: rgb(132, 178, 135);
   font-style: bold;
+  align-items: baseline;
 
   background-color:  rgb(215, 120, 111);
   border-radius: 18px;
-  width: 120px;
+  width: 130px;
+  height: 60px;
+  
+  
+  
 }
-
+.dropdown-menu {   /* nefunguje */
+  border-radius: 15px;
+  background-color: coral;
+}
 
 .img-menu {
   width: 120px;
