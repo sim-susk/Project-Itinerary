@@ -1,6 +1,14 @@
 export const cities = [
   
+  {
+    name: "Kutná Hora",
+    title: "Stříbrná pokladnice českého království",
   
+    text: "Město středočeského kraje zapsané na Seznam světového dědictví UNESCO. Hrad čí zámek, zde budete hledat jen těžko, ale útulné historické centrum a spoustu sportovně-kulturního vyžití v okolí vám to bohatě vynahradí. Nevynechejte muzeum stříbra včetně stříbrného dolu, osvěžte se v místních kavárnách a restauracích a vydejte se po stopách tamnějších horníků, kteří zasvětili kostel sv. Barboře, přímluvkyni a ochránkyni všech kdo mají nebezpečné povolání.",
+  
+    imgSrc: "kutna-hora.jpg",
+    altSrc: "Kutná Hora"
+  },
   {
     name: "Loket",
     title: "Hrad Loket a české Carcassonne",
