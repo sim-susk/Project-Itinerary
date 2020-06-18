@@ -1,18 +1,20 @@
 <template>
   <div>
-    <select v-model="selectedCity">
-      <option disabled value="">Prosím vyberte</option>
-      <option v-for="c in cities" :key="c.id" :value="c.url">
-        {{ c.name }}
-      </option>
-    </select>
-    <input type="checkbox" id="church" value="church" v-model="filters" />
-    <label for="church">church</label>
-    <input type="checkbox" id="history" value="history" v-model="filters" />
-    <label for="history">history</label>
-    <input type="checkbox" id="party" value="party" v-model="filters" />
-    <label for="party">party</label>
-    <button @click="getData">Vyhledat</button>
+    <div>
+      <select v-model="selectedCity">
+        <option disabled value="">Prosím vyberte</option>
+        <option v-for="c in cities" :key="c.id" :value="c.url">
+          {{ c.name }}
+        </option>
+      </select>
+      <input type="checkbox" id="church" value="church" v-model="filters" />
+      <label for="church">church</label>
+      <input type="checkbox" id="history" value="history" v-model="filters" />
+      <label for="history">history</label>
+      <input type="checkbox" id="party" value="party" v-model="filters" />
+      <label for="party">party</label>
+      <button @click="getData">Vyhledat</button>
+    </div>
     <div v-for="place in places" :key="place.name">
       <h2>
         <input
@@ -41,16 +43,22 @@ export default {
     city: String,
     msg: String,
   },
-  data: () => ({
-    filters: ["church"],
-    cities: cities,
-    selection: [],
-    selectedCity: "",
-  }),
+  data() {
+    return {
+      filters: ["church"],
+      cities: cities,
+      selection: [],
+      selectedCity: this.city,
+    };
+  },
 
   methods: {
     getData() {
+      console.log(this.city);
       console.log("clicked");
+    },
+    getUrl() {
+      return (selectedCity = this.city);
     },
   },
   computed: {
