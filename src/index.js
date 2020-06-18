@@ -10,13 +10,13 @@ import './index.html';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import * as VueGoogleMaps from 'vue2-google-maps'
+import * as GmapVue from 'gmap-vue'
 
 Vue.use(IconsPlugin)
 Vue.use(BootstrapVue)
 Vue.use(VueRouter);
 
-Vue.use(VueGoogleMaps, {
+Vue.use(GmapVue, {
   load: {
     key: 'AIzaSyCu6wdPTON4O0qKgp6Hs7dspsAvmjTMTqc',
     libraries: 'places',
