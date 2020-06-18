@@ -4,7 +4,7 @@
       <!-- type="light" variant="light" -->
 
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
-      <img class="img-menu" :src="`./assets/img/bg-img.png`" />
+      <img class="img-menu" :src="`/assets/img/bg-img.png`" />
 
       <b-navbar-brand></b-navbar-brand>
 
@@ -16,7 +16,7 @@
           <b-nav-item to="/aboutUs">
             <b-nav-text>O nás</b-nav-text>
           </b-nav-item>
-          <b-nav-item to="/itinerary/2">
+          <b-nav-item to="/itinerary/">
             <b-nav-text>Plánovač</b-nav-text>
           </b-nav-item>
           <b-nav-item to="/places">
@@ -37,10 +37,9 @@
 
 <script>
 export default {
-  name: "Menu"
+  name: "Menu",
 };
 </script>
-
 
 <style>
 .navbar {

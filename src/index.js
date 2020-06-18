@@ -29,6 +29,7 @@ const router = new VueRouter({
   routes: [
     { path: '/aboutUs', component: AboutUs },
     { path: '/home', component: Home },
+    { path: '/itinerary/', component: Itinerary },
     { path: '/itinerary/:id', component: Itinerary },
     { path: '/places', component: Places },
     //{ path: '*', component: PageNotFound }

@@ -1,5 +1,18 @@
 export const cities = [
   {
+    id: 1,
+    url: "kutnahora",
+    name: "Kutná Hora",
+    title: "",
+
+    text: "",
+
+    imgSrc: "mseno.jpg",
+    altSrc: "Kutná Hora"
+  },
+  {
+    id: 2,
+    url: "mseno",
     name: "Mšeno",
     title: "Letní koupání v prvorepublikových lázních Mšeno",
 
@@ -9,6 +22,8 @@ export const cities = [
     altSrc: "Mšeno"
   },
   {
+    id: 3,
+    url: "hejnice",
     name: "Hejnice",
     title: "Barokní klenot v Jizerských horách",
 
@@ -18,15 +33,19 @@ export const cities = [
     altSrc: "Hejnice"
   },
   {
+    id: 4,
+    url: "ceskakanada",
     name: "Česká Kanada",
     title: "Na ryby do Kanady",
 
-    text: "Česká Kanada leží na jihu České republiky, při historické hranici Čech a Moravy podél státní hranice s Rakouskem. Přírodní scenérie, která dala vzniknout tomuto názvu, je tvořena rozlehlými lesy, rybníky, žulovými balvany a mnoha dalšími přírodními krásami. Množství zdejších rybníků je často využíváno pro letní rekreaci a rybaření. Ráz krajiny pak tuto oblast předurčuje pro toulky přírodou, sběr lesních plodů, návštěvu památek a nejrůznější sporty, ale také pro klidnou rekreaci v krásném prostředí jihovýchodních Čech.",
+    text: "Česká Kanada leží na jihu České republiky, při historické hranici Čech a Moravy podél státní hranice s Rakouskem. Přírodní scenérie, která dala vzniknout tomuto názvu, je tvořena rozlehlými lesy, rybníky, žulovými balvany a mnoha dalšími přírodními krásami. Množství zdejších rybníků je často využíváno pro letní rekreaci a rybaření. Ráz krajiny pak tuto oblast předurčuje pro toulky přírodou, sběr lesních plodů, návštěvu památek a nejrůznější sporty, ale také pro klurlnou rekreaci v krásném prostředí jihovýchodních Čech.",
 
     imgSrc: "ceska-kanada.jpg",
     altSrc: "Česká Kanada"
   },
   {
+    id: 5,
+    url: "tabor",
     name: "Tábor",
     title: "Za historií do Tábora!",
 
@@ -36,6 +55,8 @@ export const cities = [
     altSrc: "Tábor"
   },
   {
+    id: 6,
+    url: "slavonice",
     name: "Slavonice",
     title: "Hledáte umělecké a kreativní vyžití?",
 
@@ -45,6 +66,8 @@ export const cities = [
     altSrc: "Slavonice"
   },
   {
+    id: 7,
+    url: "loket",
     name: "Loket",
     title: "Hrad Loket a české Carcassonne",
 
@@ -54,6 +77,8 @@ export const cities = [
     altSrc: "Loket"
   },
   {
+    id: 8,
+    url: "stribro",
     name: "Stříbro",
     title: "Horníci na Stříbrsku: skanzen i podzemní štoly",
 
@@ -64,6 +89,8 @@ export const cities = [
   },
 
   {
+    id: 9,
+    url: "marianskelazne",
     name: "Mariánské lázně",
     title: "Vyměnte slanou vodu za pramenitou",
 
@@ -73,6 +100,8 @@ export const cities = [
     altSrc: "Mariánské lázně"
   },
   {
+    id: 10,
+    url: "ceskesvycarsko",
     name: "České Švýcarsko",
     title: "Pohled na děčínskou Fudži",
 
@@ -82,6 +111,8 @@ export const cities = [
     altSrc: "České Švýcarsko"
   },
   {
+    id: 11,
+    url: "litomerice",
     name: "Litoměřice",
     title: "Biskupské i veletržní Litoměřice",
 
@@ -91,15 +122,19 @@ export const cities = [
     altSrc: "Litoměřice"
   },
   {
+    id: 12,
+    url: "jicin",
     name: "Jičín",
     title: "Město pohádek a fantazie",
 
-    text: "Vstupní branou do Českého ráje a do Prachovských skal je pohádkové město Jičín. Město je ideálním východištěm turistických výletů, ať již do Prachovských skal nebo na romantická místa se zříceninami starých hradů. Navštivte každoroční festival 'Jičín - město pohádky', který přináší množství představení, koncertů a aktivit, ale také možnosti výtvarně se projevit.",
+    text: "Vstupní branou do Českého ráje a do Prachovských skal je pohádkové město Jičín. Město je urleálním východištěm turistických výletů, ať již do Prachovských skal nebo na romantická místa se zříceninami starých hradů. Navštivte každoroční festival 'Jičín - město pohádky', který přináší množství představení, koncertů a aktivit, ale také možnosti výtvarně se projevit.",
 
     imgSrc: "jicin.jpg",
     altSrc: "Jičín"
   },
   {
+    id: 13,
+    url: "broumov",
     name: "Broumov",
     title: "Zažijte noc kde mniši dávají dobrou noc",
 
@@ -109,6 +144,8 @@ export const cities = [
     altSrc: "Broumov"
   },
   {
+    id: 14,
+    url: "litovel",
     name: "Hanácké Benátky - Litovel",
     title: "Město rozkročené nad vodou",
 
@@ -118,15 +155,19 @@ export const cities = [
     altSrc: "Hanácké Benátky - Litovel"
   },
   {
+    id: 15,
+    url: "kyjov",
     name: "Moravské Toskánsko - Kyjov",
     title: "Ráj pro fotografy",
 
-    text: "Je to jedna z nejpřitažlivějších lokalit v České republice, kam se lidé vydávají jen proto, aby pořídili skvostné fotografie. Dlouhé pásy hnědých či zelených polí se táhnou až k obzoru a jakoby nekončí. Malebně zvlněnou krajinu jižní Moravy jen sem tam doplňuje osamělý strom, remízek nebo bílá kaplička. Nenadarmo fotografové nazývají krajinu v okolí Kyjova Moravským Toskánskem.",
+    text: "Je to jedna z nejpřitažlivějších lokalit v České republice, kam se lurlé vydávají jen proto, aby pořídili skvostné fotografie. Dlouhé pásy hnědých či zelených polí se táhnou až k obzoru a jakoby nekončí. Malebně zvlněnou krajinu jižní Moravy jen sem tam doplňuje osamělý strom, remízek nebo bílá kaplička. Nenadarmo fotografové nazývají krajinu v okolí Kyjova Moravským Toskánskem.",
 
     imgSrc: "moravske-toskansko.jpg",
     altSrc: "Moravské Toskánsko - Kyjov"
   },
   {
+    id: 16,
+    url: "hradecnadmoravici",
     name: "Hradec nad Moravicí",
     title: "Věž Červéného zámku stejná jako v Disneylandu",
 
@@ -136,10 +177,12 @@ export const cities = [
     altSrc: "Hradec nad Moravicí"
   },
   {
+    id: 17,
+    url: "hukvaldy",
     name: "Hukvaldy",
     title: "Místo s mnoha možnostmi",
 
-    text: "Impozantní zřícenina středověkého strážního hradu, rozsáhlá obora s barokní vstupní bránou, pomník Lišky Bystroušky či rodný dům Leoše Janáčka ve staré škole, to všechno nabízejí Hukvaldy, půvabná obec v malebném podhůří Beskyd na úpatí Palkovických hůrek. My vás však tentokrát zavedeme do skleníků s velkým množstvím tropických rostlin a exotických zvířat což je jednou z dalších atrakcí co navštívit v Hukvaldech. Uvidíte masožravé rostliny, bonsaje, či kaktusy, ale hlavně dětem udělají radost třeba mluvící papoušci nebo pták Loskuták, který je nejlepším imitátorem lidského hlasu.",
+    text: "Impozantní zřícenina středověkého strážního hradu, rozsáhlá obora s barokní vstupní bránou, pomník Lišky Bystroušky či rodný dům Leoše Janáčka ve staré škole, to všechno nabízejí Hukvaldy, půvabná obec v malebném podhůří Beskyd na úpatí Palkovických hůrek. My vás však tentokrát zavedeme do skleníků s velkým množstvím tropických rostlin a exotických zvířat což je jednou z dalších atrakcí co navštívit v Hukvaldech. Uvurlíte masožravé rostliny, bonsaje, či kaktusy, ale hlavně dětem udělají radost třeba mluvící papoušci nebo pták Loskuták, který je nejlepším imitátorem lurlského hlasu.",
 
     imgSrc: "hukvaldy.jpg",
     altSrc: "Hukvaldy"
