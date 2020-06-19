@@ -68,7 +68,7 @@ export default {
 .navbar-text {
   /* nefunguje barva a styl pisma, zarovnani na sted*/
   color: rgb(132, 178, 135);
-  font-style: bold;
+  font-weight: bold;
   display: flex !important;
   align-items: center;
   justify-content: center;

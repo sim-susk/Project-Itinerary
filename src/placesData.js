@@ -184,7 +184,7 @@ export const cities = [
     title: "Ráj pro fotografy",
     tag: "travelWW",
 
-    text: "Kzjov - je jedna z nejpřitažlivějších lokalit v České republice, kam se lidé vydávají jen proto, aby pořídili skvostné fotografie. Dlouhé pásy hnědých či zelených polí se táhnou až k obzoru a jakoby nekončí. Malebně zvlněnou krajinu jižní Moravy jen sem tam doplňuje osamělý strom, remízek nebo bílá kaplička. Nenadarmo fotografové nazývají krajinu v okolí Kyjova Moravským Toskánskem.",
+    text: "Kyjov - je jedna z nejpřitažlivějších lokalit v České republice, kam se lidé vydávají jen proto, aby pořídili skvostné fotografie. Dlouhé pásy hnědých či zelených polí se táhnou až k obzoru a jakoby nekončí. Malebně zvlněnou krajinu jižní Moravy jen sem tam doplňuje osamělý strom, remízek nebo bílá kaplička. Nenadarmo fotografové nazývají krajinu v okolí Kyjova Moravským Toskánskem.",
 
     imgSrc: "moravske-toskansko.jpg",
     altSrc: "Moravské Toskánsko - Kyjov",
