@@ -1,14 +1,14 @@
 <template>
-  <div class="city">
-    <h1 class="name">{{ name }}</h1>
-    <h2 class="title">{{ title }}</h2>
-    <p class="text">{{ text }}</p>
+<div class="city">
 
-    <img class="img" :src="`./assets/img-places/${imgSrc}`" />
-    
+  <div class="item"> 
+      <div class="text">{{ text }}</div>  
+      <img class="img" :src="`./assets/img-places/${imgSrc}`" />
+      <h1 class="name">{{ name }}</h1>
+      <h2 class="title">{{ title }}</h2>
+    </div>
 
-
-  </div>
+</div>
 </template>
 
 
@@ -21,58 +21,81 @@ export default {
 
 
 <style>
-
 /* Nejmenší rozlišení */
 
-  * {
+.item {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+.title, .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  color: white;
+  z-index: 1;
+  border-radius: 20px 20px 0 0;
+}
+
+.title {
+  margin-top: 60px;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.name {
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+}
+
+.text {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgb(181, 179, 179);
+  display: none;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.item:hover .text {
+  display: block;
+}
+
+* {
     box-sizing: border-box;
+    
   }
 
 .city {
   display: block;
   text-align: center;
-  margin: 10px;
   border-radius: 10px;
-  border: solid 3px rgb(64, 63, 62);
-}
-.name, .title, .text {
-  text-align: center;
-  padding: 0 10px 0 10px;
-  display: block;
-  text-decoration-color: rgb(0, 115, 105);
-}
-
-.img {
-  max-height: 350px;
-  max-width: 250px;
-  padding-bottom: 20px;
-  overflow: auto;
-  background-color:transparent;
-}
-
-h1.name {
-  font-size: 2em;
-  font-style: bold;
-}
-
- h2.title {
-  font-size: 1em;
-  font-style: italic;
+  padding: 20px;
   
- }
-
- p.text {
-   font-size: 0.65em;
-   line-height: 1.3;
-   text-align: justify;
-   /* background-image: src(/image().png); */
- }
+}
 
  .places {
-   padding: 10px;
-   margin: 10px;
-   display: block;;
    
+   display: block;;
+   background-color: rgb(254, 250, 242);
  }
 /* Tablet */
  @media screen and (min-width: 541px) and (max-width:960px) {
@@ -97,9 +120,7 @@ h1.name {
 
 /* PC */
 @media screen and (min-width: 961px) {
-  .city {
-
-  }
+  
 }
 
 

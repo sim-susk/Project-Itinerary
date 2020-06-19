@@ -3,6 +3,7 @@ export const cities = [
   {
     name: "Kutná Hora",
     title: "Stříbrná pokladnice českého království",
+    tag: "top5",
   
     text: "Město středočeského kraje zapsané na Seznam světového dědictví UNESCO. Hrad čí zámek, zde budete hledat jen těžko, ale útulné historické centrum a spoustu sportovně-kulturního vyžití v okolí vám to bohatě vynahradí. Nevynechejte muzeum stříbra včetně stříbrného dolu, osvěžte se v místních kavárnách a restauracích a vydejte se po stopách tamnějších horníků, kteří zasvětili kostel sv. Barboře, přímluvkyni a ochránkyni všech kdo mají nebezpečné povolání.",
   
@@ -12,6 +13,7 @@ export const cities = [
   {
     name: "Loket",
     title: "Hrad Loket a české Carcassonne",
+    tag: "zapadocesky",
   
     text: "Klíč k českému království, bývalá věznice a románsko-gotická pevnost: to všechno je Loket. Na skalách nad klikatými meandry řeky Ohře stojí už osm set let a střeží okolní krajinu stejně poctivě jako francouzská středověká pevnost Carcassonne: právě ta Loket v lecčems připomíná. Navštivte Loket celoročně, nechte se unést krásou romantického městečka, dopřejte si procházku krajinou s výhledem na meandry řeky Ohře a v zimním období se zde navíc můžete těšit z vůní svařeného vína a horké medoviny podávané na tradičních vánočních trzích.",
   
@@ -21,6 +23,7 @@ export const cities = [
   {
     name: "Mšeno",
     title: "Koupání v prvorepublikových lázních",
+    tag: "top5",
 
     text: "Město Mšeno (240-403 m n. m.) je vstupní branou do CHKO Kokořínsko. Kokořínsko je lesnatý kraj, plný skalních útvarů, roklí a romantických zákoutí, protkaný množstvím turistických atrakcí a cyklistických stezek. Městské lázně Mšeno jsou ojedinělým architektonickým dílem ve stylu art déco a patří mezi skvosty Středočeského kraje. Postaveny byly v roce 1932. Jsou místem příjemného odpočinku, voda ze skalního pramene vás zaručeně příjemně zchladí i v tom nejparnějším létě. Přijďte si vychutnat jejich jedinečnou atmosféru!",
 
@@ -30,6 +33,7 @@ export const cities = [
   {
     name: "Hejnice",
     title: "Barokní klenot v Jizerských horách",
+    tag: "severocesky",
 
     text: "Hejnice jsou krásné místo obklopené Jizerskými horami. Pod kopci se tyčí monumentální stavba bazilika navštívení panny Marie. Už když k ní přicházíte nebo přijíždíte, je nádherná - kontrast barokních věží a skalnatého vrcholu Ořešníku v bučinách je jedinečný. Můžete se jen posadit pod klenbou a tiše meditovat, nebo se předem domluvit v klášteře na prohlídce a dozvědět se o době zdejší slávy i pohnutých a smutných časech. Nádherné místo!",
 
@@ -39,6 +43,7 @@ export const cities = [
   {
     name: "Česká Kanada",
     title: "Na ryby do Kanady",
+    tag: "travelWW",
 
     text: "Česká Kanada leží na jihu České republiky, při historické hranici Čech a Moravy podél státní hranice s Rakouskem. Přírodní scenérie, která dala vzniknout tomuto názvu, je tvořena rozlehlými lesy, rybníky, žulovými balvany a mnoha dalšími přírodními krásami. Množství zdejších rybníků je často využíváno pro letní rekreaci a rybaření. Ráz krajiny pak tuto oblast předurčuje pro toulky přírodou, sběr lesních plodů, návštěvu památek a nejrůznější sporty, ale také pro klidnou rekreaci v krásném prostředí jihovýchodních Čech.",
 
@@ -48,6 +53,7 @@ export const cities = [
   {
     name: "Tábor",
     title: "Za historií do Tábora!",
+    tag: "jihocesky",
 
     text: "Starobylé město s biblickým jménem Tábor láká svou slavnou minulostí, protože právě odsud vyráželi Husité na své vítězné výpravy.  Atmosféra města je cítít na každém kroku, především v historickém centru, kde můžete nahlednout i do táborského středovékého podzemí. Vhodnou kulisou k poznávání města jsou zdobené štíty měšťanských domů, pomník Jana Žižky z Trocnova i gotická radnice. Pro ty nejmenší zde najdete muzeum lega a každoroční světelné show na téma Star Wars.",
 
@@ -57,6 +63,7 @@ export const cities = [
   {
     name: "Slavonice",
     title: "Hledáte umělecké a kreativní vyžití?",
+    tag: "top5",
 
     text: "Malebné město na pomezí Čech, Moravy a Rakouska proslavily překrásné renesanční měšťanské domy s bohatě zdobenými štíty a psaníčkovými sgrafity. Projděte se po stezkách, kudy chodíval loupežník Grasel a objevte mírumilovnou krajinu, stinné lesy, starobylé aleje, mýtická zákoutí a snad i dávná obětiště Keltů. Cestou si namalujte vlastní hrnek v keramické dílně v Maříži a navštivnte prodejnu s originální keramikou.",
 
@@ -66,6 +73,7 @@ export const cities = [
   {
     name: "Stříbro",
     title: "Horníci na Stříbrsku: skanzen i podzemní štoly",
+    tag: "zapadocesky",
 
     text: "Při procházce Stříbrem vás zřejmě ani nenapadne, že země pod vámi je do hloubky několika desítek metrů protkána soustavou štol. Jejich jména – Barbora, Gottwill či Svatá Anna – vám připomenou, že Stříbrsko je vůbec nejstarším doloženým rudním revírem u nás. V prostoru před ústím bývalé královské dědičné štoly Prokop se nachází Hornický skanzen s bohatým strojním vybavením, můžete se samozřejmě projít i atraktivním podzemím a navštívit hornické expozice v místním muzeu.",
 
@@ -76,6 +84,7 @@ export const cities = [
   {
     name: "Mariánské lázně",
     title: "Vyměnte slanou vodu za pramenitou",
+    tag: "travelWW",
 
     text: "Výstavní lázeňské domy, více než stovka minerálních pramenů, několik kolonád v čele s litinovou novobarokní kolonádou z konce 19. století, divadlo, Městské muzeum, památníky a pomníky, rozhledna Hamelika, zpívající fontána a solná jeskyně – to všechno jsou Mariánské Lázně. Město proslulé svými parky a zahradami si v minulosti kromě velkých umělců zamilovali i představitelé světové šlechty. Zamilujte se nyní i vy a vyměňte chorvatskou promenádu za tu mariánskou.",
 
@@ -85,6 +94,7 @@ export const cities = [
   {
     name: "České Švýcarsko",
     title: "Pohled na děčínskou Fudži",
+    tag: "travelWW",
 
     text: "Růžová hora v Českém Švýcarsku si svou přezdívku Děčínská Fudžijama zaslouží. Obě hory spojuje sopečný původ, osamocená dominantní poloha i kouzelné fotografie, na nichž se z mlhy a mraků vynořují typické vrcholové kužely. Pohádková krajina Českého Švýcarska s množstvím pískovcových skal nabízí ale mnohem víc. Najdete tu rozhledny, atraktivní skalní vyhlídky, poutní místa a město Děčín s půvabným zámkem a zoologickou zahradou, kterou ocení nejen děti ale i dospělé.",
 
@@ -94,6 +104,7 @@ export const cities = [
   {
     name: "Litoměřice",
     title: "Biskupské i veletržní Litoměřice",
+    tag: "severocesky",
 
     text: "Historickou slávu královských Litoměřic připomínají gotické, renesanční i barokní stavby, chráněné v městské památkové rezervaci. Téměř všechny je naleznete v historickém městském jádru, které je ohraničené z velké části dochovaným gotickým opevněním. Město je sídlem biskupství a centrem vinařské oblasti. Jestliže vás zdejší vinařská tradice láká, neopomeňte se zastavit v Litoměřickém hradu, kde naleznete interaktivní expozici vinařství.",
 
@@ -103,6 +114,7 @@ export const cities = [
   {
     name: "Jičín",
     title: "Město pohádek a fantazie",
+    tag: "top5",
 
     text: "Vstupní branou do Českého ráje a do Prachovských skal je pohádkové město Jičín. Město je ideálním východištěm turistických výletů, ať již do Prachovských skal nebo na romantická místa se zříceninami starých hradů. Navštivte každoroční festival 'Jičín - město pohádky', který přináší množství představení, koncertů a aktivit, ale také možnosti výtvarně se projevit.",
 
@@ -112,6 +124,7 @@ export const cities = [
 {
   name: "Broumov",
   title: "Zažijte noc kde mniši dávají dobrou noc",
+  tag: "vychodocesky",
 
   text: "Život města, ležícího v kotlině téměř na česko-polských hranicích, se po staletí točil kolem benediktinského kláštera. Ten je dodnes společně s okolní přírodou, tedy s hřebenem pohraničních Javořích hor, hlavním turistickým magnetem Broumovska. Unikátní ubytování v mnišských celách, si raději zarezervujte několik týdnů dopředu. Znalce piva potěší prohlídka pivovaru, milovníci přírodních krás se mohou vypravit do skalního bludiště Broumovských stěn anebo se na město podívat z rozhledny na Ruprechtickém Špičáku.",
 
@@ -119,39 +132,59 @@ export const cities = [
   altSrc: "Broumov"
 },
 {
-  name: "Hanácké Benátky - Litovel",
+  name: "Hanácké Benátky",
   title: "Město rozkročené nad vodou",
+  tag: "travelWW",
 
   text: "Kde byste hledali vůbec nejstarší most na Moravě? Nestojí ani v Olomouci, ani v Brně, ale ve městě, kde to bez mostů zkrátka nešlo: v Litovli. Přestože k nejbližšímu moři to odtud je pár stovek kilometrů, městu se říká Hanácké Benátky. Proč? Město totiž vzniklo na sedmi ramenech řeky Moravy, ačkoli dnes už se jich Litovlí klikatí jen šest. Jednou z kuriozit hlavního litovelského náměstí tak je schodiště vedoucí k hladině podzemní řeky.",
 
   imgSrc: "litovel.jpg",
-  altSrc: "Hanácké Benátky - Litovel"
+  altSrc: "Hanácké Benátky - Litovel",
+  
 },
 {
-  name: "Moravské Toskánsko - Kyjov",
+  name: "Moravské Toskánsko",
   title: "Ráj pro fotografy",
+  tag: "travelWW",
 
-  text: "Je to jedna z nejpřitažlivějších lokalit v České republice, kam se lidé vydávají jen proto, aby pořídili skvostné fotografie. Dlouhé pásy hnědých či zelených polí se táhnou až k obzoru a jakoby nekončí. Malebně zvlněnou krajinu jižní Moravy jen sem tam doplňuje osamělý strom, remízek nebo bílá kaplička. Nenadarmo fotografové nazývají krajinu v okolí Kyjova Moravským Toskánskem.",
+  text: "Kzjov - je jedna z nejpřitažlivějších lokalit v České republice, kam se lidé vydávají jen proto, aby pořídili skvostné fotografie. Dlouhé pásy hnědých či zelených polí se táhnou až k obzoru a jakoby nekončí. Malebně zvlněnou krajinu jižní Moravy jen sem tam doplňuje osamělý strom, remízek nebo bílá kaplička. Nenadarmo fotografové nazývají krajinu v okolí Kyjova Moravským Toskánskem.",
 
   imgSrc: "moravske-toskansko.jpg",
-  altSrc: "Moravské Toskánsko - Kyjov"
+  altSrc: "Moravské Toskánsko - Kyjov",
+  
 },
 {
   name: "Hradec nad Moravicí",
   title: "Věž Červéného zámku stejná jako v Disneylandu",
+  tag: "travelWW",
 
   text: "Jižně od Opavy leží město, které známe především díky romantickému zámku –  Červený zámek v Hradci nad Moravicí. Rozlehlý komplex s masivní hodinovou věží a vstupní branou je připoďobnován k pohádkovému zámku Disneyland. Avšak zapomíná se na celou řadu zajímavostí v okolí, od vyhlídek a rozhleden přes křížovou cestu a kalvárii až po řeku Moravici, jejíž údolí od Kružberku po Hradec patří k nejkrásnějším říčním údolím v Česku.",
 
   imgSrc: "hradec-nad-moravici.jpg",
-  altSrc: "Hradec nad Moravicí"
+  altSrc: "Hradec nad Moravicí",
+  
 },
 {
   name: "Hukvaldy",
   title: "Místo s mnoha možnostmi",
+  tag: "severomoravsky",
 
   text: "Impozantní zřícenina středověkého strážního hradu, rozsáhlá obora s barokní vstupní bránou, pomník Lišky Bystroušky či rodný dům Leoše Janáčka ve staré škole, to všechno nabízejí Hukvaldy, půvabná obec v malebném podhůří Beskyd na úpatí Palkovických hůrek. My vás však tentokrát zavedeme do skleníků s velkým množstvím tropických rostlin a exotických zvířat což je jednou z dalších atrakcí co navštívit v Hukvaldech. Uvidíte masožravé rostliny, bonsaje, či kaktusy, ale hlavně dětem udělají radost třeba mluvící papoušci nebo pták Loskuták, který je nejlepším imitátorem lidského hlasu.",
 
   imgSrc: "hukvaldy.jpg",
-  altSrc: "Hukvaldy"
+  altSrc: "Hukvaldy",
+  
 },
+{
+  name: "Praha",
+  title: "Petřínská Eiffelovka",
+  tag: "travelWW",
+
+  text: "Petřínská rozhledna poskytne krásný výhled na celé město, jen s těží uvěříte, že se nenacházíte v Paříži. Projděte se krásným parkem a skočte si v centru Prahy na křupavý croissant, který ucelý francouzskou atmosféru. Au revoir!",
+
+  imgSrc: "Praha.jpg",
+  altSrc: "Petřínská Eiffelovka",
+  
+},
+
 ]

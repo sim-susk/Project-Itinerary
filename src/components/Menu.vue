@@ -21,7 +21,7 @@
 
        <b-nav-item-dropdown text="Přehled měst" right class="navbar-text">
           <b-dropdown-item href="Search">Hledej podle krajů</b-dropdown-item>
-          <b-dropdown-item href="Top10">Top 10 měst</b-dropdown-item>
+          <b-dropdown-item href="Top10">Top 5</b-dropdown-item>
           <b-dropdown-item href="TravelWW">Cestujeme světově</b-dropdown-item>
           <b-dropdown-item href="Recommend">Doporučujeme</b-dropdown-item>
         </b-nav-item-dropdown>
@@ -78,10 +78,8 @@ export default {
   border-radius: 18px;
   width: 130px;
   height: 60px;
-  
-  
-  
 }
+
 .dropdown-menu {   /* nefunguje */
   border-radius: 15px;
   background-color: coral;
@@ -90,14 +88,12 @@ export default {
 .img-menu {
   width: 120px;
   height: 100px;
-
-  
 }
 
 /* Tablet */
- @media screen and (min-width: 541px) and (max-width:960px) 
+ /* @media screen and (min-width: 541px) and (max-width:960px)  */
 
 /* PC */
-@media screen and (min-width: 961px)
+/* @media screen and (min-width: 961px) */
 
 </style>
