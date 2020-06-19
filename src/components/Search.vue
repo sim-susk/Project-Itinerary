@@ -13,7 +13,6 @@
       <label for="history">history</label>
       <input type="checkbox" id="party" value="party" v-model="filters" />
       <label for="party">party</label>
-      <button @click="getData">Vyhledat</button>
     </div>
     <div v-for="place in places" :key="place.name">
       <h2>
@@ -31,11 +30,11 @@
 
     <Map :places="mapPlaces" />
     <div v-if="mapPlaces.length >= 2">
-      <a :href="generateGoogleMapLink()">
-        bicyklujem
+      <a :href="generateGoogleMapLink('walking')">
+        Idem pešo!
       </a>
-      <a></a>
-      <a></a>
+      <a :href="generateGoogleMapLink('transit')">Idem MHD!</a>
+      <a :href="generateGoogleMapLink('driving')">Idem autom!</a>
     </div>
   </div>
 </template>
@@ -60,10 +59,6 @@ export default {
   },
 
   methods: {
-    getData() {
-      console.log(this.city);
-      console.log("clicked");
-    },
     generateGoogleMapLink(travel = "driving") {
       let places = this.mapPlaces;
 
@@ -71,21 +66,16 @@ export default {
         "https://www.google.com/maps/dir/?api=1&travelmode=" +
         travel +
         "&origin=" +
-        places[0].latitude +
-        "," +
-        places[0].longitude;
+        encodeURIComponent(places[0].outputName);
       let waypoints = "";
       for (let i = 1; i <= places.length - 2; i++) {
-        waypoints += places[i].latitude + "," + places[i].longitude + "%7C";
+        waypoints += encodeURIComponent(places[i].outputName) + "%7C";
       }
 
       let urlWaypoints = waypoints.length ? "&waypoints=" + waypoints : "";
       let urlDestination =
         "&destination=" +
-        places[places.length - 1].latitude +
-        "," +
-        places[places.length - 1].longitude;
-
+        encodeURIComponent(places[places.length - 1].outputName);
       return urlOrigin + urlWaypoints + urlDestination;
     },
   },
