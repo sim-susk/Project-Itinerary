@@ -21,9 +21,8 @@
 
        <b-nav-item-dropdown text="Přehled měst" right class="navbar-text">
           <b-dropdown-item href="Search">Hledej podle krajů</b-dropdown-item>
-          <b-dropdown-item href="Top10">Top 5</b-dropdown-item>
+          <b-dropdown-item href="Top5">Top 5</b-dropdown-item>
           <b-dropdown-item href="TravelWW">Cestujeme světově</b-dropdown-item>
-          <b-dropdown-item href="Recommend">Doporučujeme</b-dropdown-item>
         </b-nav-item-dropdown>
 
           </b-nav-item>
@@ -68,11 +67,14 @@ export default {
 }
 
 
+
 .navbar-text {
   /* nefunguje barva a styl pisma, zarovnani na sted*/
-  color: rgb(132, 178, 135);
+  color: rgb(132, 178, 135) ;
   font-style: bold;
-  align-items: baseline;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 
   background-color:  rgb(215, 120, 111);
   border-radius: 18px;

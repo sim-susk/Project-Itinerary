@@ -13,7 +13,7 @@ export const cities = [
   {
     name: "Loket",
     title: "Hrad Loket a české Carcassonne",
-    tag: "zapadocesky",
+    tag: "kraj",
   
     text: "Klíč k českému království, bývalá věznice a románsko-gotická pevnost: to všechno je Loket. Na skalách nad klikatými meandry řeky Ohře stojí už osm set let a střeží okolní krajinu stejně poctivě jako francouzská středověká pevnost Carcassonne: právě ta Loket v lecčems připomíná. Navštivte Loket celoročně, nechte se unést krásou romantického městečka, dopřejte si procházku krajinou s výhledem na meandry řeky Ohře a v zimním období se zde navíc můžete těšit z vůní svařeného vína a horké medoviny podávané na tradičních vánočních trzích.",
   
@@ -33,7 +33,7 @@ export const cities = [
   {
     name: "Hejnice",
     title: "Barokní klenot v Jizerských horách",
-    tag: "severocesky",
+    tag: "kraj",
 
     text: "Hejnice jsou krásné místo obklopené Jizerskými horami. Pod kopci se tyčí monumentální stavba bazilika navštívení panny Marie. Už když k ní přicházíte nebo přijíždíte, je nádherná - kontrast barokních věží a skalnatého vrcholu Ořešníku v bučinách je jedinečný. Můžete se jen posadit pod klenbou a tiše meditovat, nebo se předem domluvit v klášteře na prohlídce a dozvědět se o době zdejší slávy i pohnutých a smutných časech. Nádherné místo!",
 
@@ -53,7 +53,7 @@ export const cities = [
   {
     name: "Tábor",
     title: "Za historií do Tábora!",
-    tag: "jihocesky",
+    tag: "kraj",
 
     text: "Starobylé město s biblickým jménem Tábor láká svou slavnou minulostí, protože právě odsud vyráželi Husité na své vítězné výpravy.  Atmosféra města je cítít na každém kroku, především v historickém centru, kde můžete nahlednout i do táborského středovékého podzemí. Vhodnou kulisou k poznávání města jsou zdobené štíty měšťanských domů, pomník Jana Žižky z Trocnova i gotická radnice. Pro ty nejmenší zde najdete muzeum lega a každoroční světelné show na téma Star Wars.",
 
@@ -73,7 +73,7 @@ export const cities = [
   {
     name: "Stříbro",
     title: "Horníci na Stříbrsku: skanzen i podzemní štoly",
-    tag: "zapadocesky",
+    tag: "kraj",
 
     text: "Při procházce Stříbrem vás zřejmě ani nenapadne, že země pod vámi je do hloubky několika desítek metrů protkána soustavou štol. Jejich jména – Barbora, Gottwill či Svatá Anna – vám připomenou, že Stříbrsko je vůbec nejstarším doloženým rudním revírem u nás. V prostoru před ústím bývalé královské dědičné štoly Prokop se nachází Hornický skanzen s bohatým strojním vybavením, můžete se samozřejmě projít i atraktivním podzemím a navštívit hornické expozice v místním muzeu.",
 
@@ -104,7 +104,7 @@ export const cities = [
   {
     name: "Litoměřice",
     title: "Biskupské i veletržní Litoměřice",
-    tag: "severocesky",
+    tag: "kraj",
 
     text: "Historickou slávu královských Litoměřic připomínají gotické, renesanční i barokní stavby, chráněné v městské památkové rezervaci. Téměř všechny je naleznete v historickém městském jádru, které je ohraničené z velké části dochovaným gotickým opevněním. Město je sídlem biskupství a centrem vinařské oblasti. Jestliže vás zdejší vinařská tradice láká, neopomeňte se zastavit v Litoměřickém hradu, kde naleznete interaktivní expozici vinařství.",
 
@@ -124,7 +124,7 @@ export const cities = [
 {
   name: "Broumov",
   title: "Zažijte noc kde mniši dávají dobrou noc",
-  tag: "vychodocesky",
+  tag: "kraj",
 
   text: "Život města, ležícího v kotlině téměř na česko-polských hranicích, se po staletí točil kolem benediktinského kláštera. Ten je dodnes společně s okolní přírodou, tedy s hřebenem pohraničních Javořích hor, hlavním turistickým magnetem Broumovska. Unikátní ubytování v mnišských celách, si raději zarezervujte několik týdnů dopředu. Znalce piva potěší prohlídka pivovaru, milovníci přírodních krás se mohou vypravit do skalního bludiště Broumovských stěn anebo se na město podívat z rozhledny na Ruprechtickém Špičáku.",
 
@@ -167,7 +167,7 @@ export const cities = [
 {
   name: "Hukvaldy",
   title: "Místo s mnoha možnostmi",
-  tag: "severomoravsky",
+  tag: "kraj",
 
   text: "Impozantní zřícenina středověkého strážního hradu, rozsáhlá obora s barokní vstupní bránou, pomník Lišky Bystroušky či rodný dům Leoše Janáčka ve staré škole, to všechno nabízejí Hukvaldy, půvabná obec v malebném podhůří Beskyd na úpatí Palkovických hůrek. My vás však tentokrát zavedeme do skleníků s velkým množstvím tropických rostlin a exotických zvířat což je jednou z dalších atrakcí co navštívit v Hukvaldech. Uvidíte masožravé rostliny, bonsaje, či kaktusy, ale hlavně dětem udělají radost třeba mluvící papoušci nebo pták Loskuták, který je nejlepším imitátorem lidského hlasu.",
 
@@ -182,7 +182,7 @@ export const cities = [
 
   text: "Petřínská rozhledna poskytne krásný výhled na celé město, jen s těží uvěříte, že se nenacházíte v Paříži. Projděte se krásným parkem a skočte si v centru Prahy na křupavý croissant, který ucelý francouzskou atmosféru. Au revoir!",
 
-  imgSrc: "Praha.jpg",
+  imgSrc: "praha.jpg",
   altSrc: "Petřínská Eiffelovka",
   
 },

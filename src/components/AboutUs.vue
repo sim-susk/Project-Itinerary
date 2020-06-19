@@ -23,11 +23,15 @@ export default {
 </script>
 
 <style>
+html {
+  background-color: rgb(254, 250, 242);
+}
 
 .aboutUs {
   padding: 20px;
   background-color: rgb(254, 250, 242);
   position: absolute;
+  
 
 }
 
@@ -38,7 +42,10 @@ p {
   text-align: justify;
   background-color: beige;
   border-radius: 20px;
+  /* box-shadow: 2px 1px 10px 10px #959595; */
+  box-shadow: 22px 23px 29px -9px rgba(0,0,0,0.67);
 }
+
 
  /* .case {
 

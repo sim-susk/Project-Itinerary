@@ -3,7 +3,7 @@
 
   <div class="item"> 
       <div class="text">{{ text }}</div>  
-      <img class="img" :src="`./assets/img-places/${imgSrc}`" />
+      <img class="img" :src="`/assets/img-places/${imgSrc}`" />
       <h1 class="name">{{ name }}</h1>
       <h2 class="title">{{ title }}</h2>
     </div>
@@ -22,11 +22,14 @@ export default {
 
 <style>
 /* Nejmenší rozlišení */
+html {
+  background-color: rgb(254, 250, 242);
+}
 
 .item {
   position: relative;
   height: 400px;
-  width: 400px;
+
 }
 
 .title, .name {
@@ -103,16 +106,16 @@ img {
      /* pri vsech rozlisenich stejny???? */
      /* font-size: 3em; */
   align-items: center;
-  flex-wrap: wrap;
+  
+  width: calc(50% - 20px);
+  
   padding: 10px;
   margin: 10px;
    }
  
 .places {
   display: flex;
-  width: auto;
-  flex-grow: 2;
-  
+  flex-wrap: wrap;
 }
  }
 
