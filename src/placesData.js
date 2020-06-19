@@ -3,11 +3,12 @@ export const cities = [
     id: 1,
     url: "kutnahora",
     name: "Kutná Hora",
-    title: "",
+    title: "Stříbrná pokladnice českého království",
+    tags: "top5",
 
-    text: "",
+    text: "Město středočeského kraje zapsané na Seznam světového dědictví UNESCO. Hrad čí zámek, zde budete hledat jen těžko, ale útulné historické centrum a spoustu sportovně-kulturního vyžití v okolí vám to bohatě vynahradí. Nevynechejte muzeum stříbra včetně stříbrného dolu, osvěžte se v místních kavárnách a restauracích a vydejte se po stopách tamnějších horníků, kteří zasvětili kostel sv. Barboře, přímluvkyni a ochránkyni všech kdo mají nebezpečné povolání.",
 
-    imgSrc: "mseno.jpg",
+    imgSrc: "kutna-hora.jpg",
     altSrc: "Kutná Hora"
   },
   {

@@ -7,12 +7,31 @@
           {{ c.name }}
         </option>
       </select>
+      <p>Historické památky</p>
       <input type="checkbox" id="church" value="church" v-model="filters" />
-      <label for="church">church</label>
-      <input type="checkbox" id="history" value="history" v-model="filters" />
-      <label for="history">history</label>
-      <input type="checkbox" id="party" value="party" v-model="filters" />
-      <label for="party">party</label>
+      <label for="church">Kostel</label>
+      <input type="checkbox" id="museum" value="museum" v-model="filters" />
+      <label for="museum">Muzeum</label>
+
+      <p>Relax</p>
+      <input type="checkbox" id="cinema" value="cinema" v-model="filters" />
+      <label for="cinema">Kino</label>
+      <input type="checkbox" id="walk" value="walk" v-model="filters" />
+      <label for="walk">Procházka</label>
+      <input type="checkbox" id="health" value="health" v-model="filters" />
+      <label for="health">Pro zdraví</label>
+
+      <p>Rodinné aktivity</p>
+      <input type="checkbox" id="kids" value="kids" v-model="filters" />
+      <label for="kids">Pro děti</label>
+      <input type="checkbox" id="nature" value="nature" v-model="filters" />
+      <label for="nature">V přírodě</label>
+
+      <p>Sportovní aktivity</p>
+      <input type="checkbox" id="swim" value="swim" v-model="filters" />
+      <label for="swim">Koupání</label>
+      <input type="checkbox" id="ride" value="ride" v-model="filters" />
+      <label for="ride">Cyklistika</label>
     </div>
     <div v-for="place in places" :key="place.name">
       <h2>
