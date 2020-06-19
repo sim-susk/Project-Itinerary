@@ -30,6 +30,13 @@
     </div>
 
     <Map :places="mapPlaces" />
+    <div v-if="mapPlaces.length >= 2">
+      <a :href="generateGoogleMapLink()">
+        bicyklujem
+      </a>
+      <a></a>
+      <a></a>
+    </div>
   </div>
 </template>
 <script>
@@ -57,8 +64,29 @@ export default {
       console.log(this.city);
       console.log("clicked");
     },
-    getUrl() {
-      return (selectedCity = this.city);
+    generateGoogleMapLink(travel = "driving") {
+      let places = this.mapPlaces;
+
+      let urlOrigin =
+        "https://www.google.com/maps/dir/?api=1&travelmode=" +
+        travel +
+        "&origin=" +
+        places[0].latitude +
+        "," +
+        places[0].longitude;
+      let waypoints = "";
+      for (let i = 1; i <= places.length - 2; i++) {
+        waypoints += places[i].latitude + "," + places[i].longitude + "%7C";
+      }
+
+      let urlWaypoints = waypoints.length ? "&waypoints=" + waypoints : "";
+      let urlDestination =
+        "&destination=" +
+        places[places.length - 1].latitude +
+        "," +
+        places[places.length - 1].longitude;
+
+      return urlOrigin + urlWaypoints + urlDestination;
     },
   },
   computed: {

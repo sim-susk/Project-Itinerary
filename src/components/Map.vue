@@ -12,6 +12,8 @@
         :position="{ lat: m.latitude, lng: m.longitude }"
         :clickable="true"
       />
+      <gmap-polyline v-if="path.length > 0" :path="path" ref="polyline">
+      </gmap-polyline>
     </GmapMap>
   </div>
 </template>
@@ -20,6 +22,13 @@ export default {
   name: "Map",
   props: {
     places: Array,
+  },
+  computed: {
+    path() {
+      return this.places.map((place) => {
+        return { lat: place.latitude, lng: place.longitude };
+      });
+    },
   },
 };
 </script>
