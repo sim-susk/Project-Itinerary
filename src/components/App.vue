@@ -1,11 +1,13 @@
 <template>
-  <div class="menu">
+  <div>
     <Menu />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Menu from "./Menu.vue";
+
 export default {
   name: "App",
   components: {
@@ -15,6 +17,8 @@ export default {
 </script>
 
 <style lang="css">
+/* Styly??????? */
+
 * {
   box-sizing: border-box;
 }
@@ -22,7 +26,5 @@ export default {
 html {
   font-family: sans-serif;
 }
-
-
 </style>
 
