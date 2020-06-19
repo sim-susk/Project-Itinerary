@@ -97,7 +97,7 @@ img {
 
  .places {
    
-   display: block;;
+   display: block;
    background-color: rgb(254, 250, 242);
  }
 /* Tablet */
@@ -107,10 +107,12 @@ img {
      /* font-size: 3em; */
   align-items: center;
   
+  
   width: calc(50% - 20px);
   
   padding: 10px;
   margin: 10px;
+  justify-content: center !important;
    }
  
 .places {
@@ -119,11 +121,21 @@ img {
 }
  }
 
-
-
 /* PC */
 @media screen and (min-width: 961px) {
-  
+  .city {
+  align-items: center;
+  width: calc(50% - 20px);
+  padding: 10px;
+  margin: 10px;
+  justify-content: center !important;
+   }
+ 
+.places {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
 }
 
 

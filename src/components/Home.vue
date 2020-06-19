@@ -3,8 +3,7 @@
 
 <p>
 Plánujete výlet a nevíte kam? <br>
-U nás najdete všechny krásy České republiky pohodlně na jednom místě. <br>
-Stačí párkrát kliknout a my za vás pohodlně naplánujeme trasu. </p> <br>
+U nás najdete všechny krásy České republiky pohodlně na jednom místě. Stačí párkrát kliknout a my za vás pohodlně naplánujeme trasu. </p> <br>
 
 
 

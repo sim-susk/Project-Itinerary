@@ -42,7 +42,6 @@ p {
   text-align: justify;
   background-color: beige;
   border-radius: 20px;
-  /* box-shadow: 2px 1px 10px 10px #959595; */
   box-shadow: 22px 23px 29px -9px rgba(0,0,0,0.67);
 }
 
