@@ -175,6 +175,12 @@ export default {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 791px) and (max-width: 1270px) {
+  .checkboxSection {
+    padding-bottom: 100px;
+  }
+}
+
 @media screen and (min-width: 1271px) {
   .mapDisplay {
     position: fixed;
@@ -189,8 +195,10 @@ export default {
   }
 
   #checkboxesOutput {
-    width: calc(100vw - 440px);
+    width: calc(100vw - 400px);
     margin-top: -100px;
+    max-height: calc(100vh - 116px - 120px);
+    overflow-y: scroll;
   }
   .checkboxSection {
     width: calc(100vw - 400px);
