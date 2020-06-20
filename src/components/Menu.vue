@@ -16,15 +16,15 @@
           <b-nav-item to="/aboutUs">
             <b-nav-text>O aplikaci</b-nav-text>
           </b-nav-item>
-          <b-nav-item to="/places">
-            <!-- <b-nav-text>Přehled měst</b-nav-text> -->
+          <!-- <b-nav-item to="/places"> -->
+          <!-- <b-nav-text>Přehled měst</b-nav-text> -->
 
-            <b-nav-item-dropdown text="Přehled měst" right class="navbar-text">
-              <b-dropdown-item href="Search">Hledej podle krajů</b-dropdown-item>
-              <b-dropdown-item href="Top5">Top 5</b-dropdown-item>
-              <b-dropdown-item href="TravelWW">Cestujeme světově</b-dropdown-item>
-            </b-nav-item-dropdown>
-          </b-nav-item>
+          <b-nav-item-dropdown text="Přehled měst" right class="navbar-text">
+            <b-dropdown-item href="Search">Hledej podle krajů</b-dropdown-item>
+            <b-dropdown-item href="Top5">Top 5</b-dropdown-item>
+            <b-dropdown-item href="TravelWW">Cestujeme světově</b-dropdown-item>
+          </b-nav-item-dropdown>
+          <!-- </b-nav-item> -->
           <b-nav-item to="/itinerary/">
             <b-nav-text>Plánovač</b-nav-text>
           </b-nav-item>
@@ -60,7 +60,7 @@ export default {
 }
 
 .navbar-collapse.collapse {
-  text-align: center;
+  /* text-align: center; */
   justify-content: center;
   padding: 0;
 }
@@ -69,14 +69,14 @@ export default {
   /* nefunguje barva a styl pisma, zarovnani na sted*/
   color: rgb(132, 178, 135);
   font-weight: bold;
-  display: flex !important;
+  /* display: flex !important;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 
-  background-color: rgb(215, 120, 111);
-  border-radius: 18px;
-  width: 130px;
-  height: 60px;
+  /* background-color: rgb(215, 120, 111); */
+  /* border-radius: 18px; */
+  /* width: 130px; */
+  /* height: 60px; */
 }
 
 .dropdown-menu {

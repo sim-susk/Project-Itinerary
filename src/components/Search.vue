@@ -9,53 +9,71 @@
         </select>
 
         <b-dropdown class="mx-1" right text="Historické památky">
-          <b-dropdown-item @click="toggleFilter('church')">
-            <input type="checkbox" id="church" value="church" v-model="filters" />
-            <label for="church">Kostel</label>
-          </b-dropdown-item>
-          <b-dropdown-item @click="toggleFilter('museum')">
-            <input type="checkbox" id="museum" value="museum" v-model="filters" />
-            <label for="museum">Muzeum</label>
-          </b-dropdown-item>
+          <b-dropdown-text>
+            <label for="church">
+              <input type="checkbox" id="church" value="church" v-model="filters" />
+              Kostel
+            </label>
+          </b-dropdown-text>
+          <b-dropdown-text>
+            <label for="museum">
+              <input type="checkbox" id="museum" value="museum" v-model="filters" />
+              Muzeum
+            </label>
+          </b-dropdown-text>
         </b-dropdown>
 
         <b-dropdown class="mx-1" right text="Relax">
-          <b-dropdown-item @click="toggleFilter('cinema')">
-            <input type="checkbox" id="cinema" value="cinema" v-model="filters" />
-            <label for="cinema">Kino</label>
-          </b-dropdown-item>
-          <b-dropdown-item @click="toggleFilter('walk')">
-            <input type="checkbox" id="walk" value="walk" v-model="filters" />
-            <label for="walk">Procházka</label>
-          </b-dropdown-item>
-          <b-dropdown-item @click="toggleFilter('health')">
-            <input type="checkbox" id="health" value="health" v-model="filters" />
-            <label for="health">Pro zdraví</label>
-          </b-dropdown-item>
+          <b-dropdown-text>
+            <label for="cinema">
+              <input type="checkbox" id="cinema" value="cinema" v-model="filters" />
+              Kino
+            </label>
+          </b-dropdown-text>
+          <b-dropdown-text>
+            <label for="walk">
+              <input type="checkbox" id="walk" value="walk" v-model="filters" />
+              Procházka
+            </label>
+          </b-dropdown-text>
+          <b-dropdown-text>
+            <label for="health">
+              <input type="checkbox" id="health" value="health" v-model="filters" />
+              Pro zdraví
+            </label>
+          </b-dropdown-text>
         </b-dropdown>
 
         <b-dropdown class="mx-1" right text="Rodinné aktivity">
-          <b-dropdown-item @click="toggleFilter('kids')">
-            <input type="checkbox" id="kids" value="kids" v-model="filters" />
-            <label for="kids">Pro děti</label>
-          </b-dropdown-item>
+          <b-dropdown-text>
+            <label for="kids">
+              <input type="checkbox" id="kids" value="kids" v-model="filters" />
+              Pro děti
+            </label>
+          </b-dropdown-text>
 
-          <b-dropdown-item @click="toggleFilter('nature')">
-            <input type="checkbox" id="nature" value="nature" v-model="filters" />
-            <label for="nature">V přírodě</label>
-          </b-dropdown-item>
+          <b-dropdown-text>
+            <label for="nature">
+              <input type="checkbox" id="nature" value="nature" v-model="filters" />
+              V přírodě
+            </label>
+          </b-dropdown-text>
         </b-dropdown>
 
         <b-dropdown class="mx-1" right text="Sportovní aktivity">
-          <b-dropdown-item @click="toggleFilter('swim')">
-            <input type="checkbox" id="swim" value="swim" v-model="filters" />
-            <label for="swim">Koupání</label>
-          </b-dropdown-item>
+          <b-dropdown-text>
+            <label for="swim">
+              <input type="checkbox" id="swim" value="swim" v-model="filters" />
+              Koupání
+            </label>
+          </b-dropdown-text>
 
-          <b-dropdown-item @click="toggleFilter('swim')">
-            <input type="checkbox" id="ride" value="ride" v-model="filters" />
-            <label for="ride">Cyklistika</label>
-          </b-dropdown-item>
+          <b-dropdown-text>
+            <label for="ride">
+              <input type="checkbox" id="ride" value="ride" v-model="filters" />
+              Cyklistika
+            </label>
+          </b-dropdown-text>
         </b-dropdown>
       </div>
       <!-- </div> -->
@@ -168,6 +186,16 @@ export default {
 #checkboxes,
 #checkboxesOutput {
   width: 100vw;
+}
+
+.b-dropdown-text {
+  padding: 0;
+}
+
+.b-dropdown-text label {
+  cursor: pointer;
+  padding: 0.25rem 1.5rem;
+  display: block;
 }
 @media screen and (max-width: 790px) {
   #checkboxes {
