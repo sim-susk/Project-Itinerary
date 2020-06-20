@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="menuButtons">
     <b-navbar toggleable="md">
       <!-- type="light" variant="light" -->
 
@@ -53,6 +53,10 @@ export default {
   margin: 0;
   padding: 0;
   background-color: rgb(254, 246, 242);
+
+  position: sticky;
+  left: 0;
+  top: 0;
 }
 
 .navbar-collapse.collapse {

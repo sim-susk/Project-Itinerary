@@ -1,38 +1,65 @@
 <template>
   <div class="search">
     <div class="pagePosition">
-      <div class="checkboxSection">
-        <div>
-          <select v-model="selectedCity" required>
-            <option hidden disabled value>Prosím vyberte</option>
-            <option v-for="c in cities" :key="c.id" :value="c.url">{{ c.name }}</option>
-          </select>
-          <p>Historické památky</p>
-          <input type="checkbox" id="church" value="church" v-model="filters" />
-          <label for="church">Kostel</label>
-          <input type="checkbox" id="museum" value="museum" v-model="filters" />
-          <label for="museum">Muzeum</label>
+      <div class="checkboxSection" id="checkboxes">
+        <!-- <div class="checkboxesAlign"> -->
+        <select class="margin" v-model="selectedCity" required>
+          <option hidden disabled value>Prosím vyberte</option>
+          <option v-for="c in cities" :key="c.id" :value="c.url">{{ c.name }}</option>
+        </select>
 
-          <p>Relax</p>
-          <input type="checkbox" id="cinema" value="cinema" v-model="filters" />
-          <label for="cinema">Kino</label>
-          <input type="checkbox" id="walk" value="walk" v-model="filters" />
-          <label for="walk">Procházka</label>
-          <input type="checkbox" id="health" value="health" v-model="filters" />
-          <label for="health">Pro zdraví</label>
+        <b-dropdown class="mx-1" right text="Historické památky">
+          <b-dropdown-item @click="toggleFilter('church')">
+            <input type="checkbox" id="church" value="church" v-model="filters" />
+            <label for="church">Kostel</label>
+          </b-dropdown-item>
+          <b-dropdown-item @click="toggleFilter('museum')">
+            <input type="checkbox" id="museum" value="museum" v-model="filters" />
+            <label for="museum">Muzeum</label>
+          </b-dropdown-item>
+        </b-dropdown>
 
-          <p>Rodinné aktivity</p>
-          <input type="checkbox" id="kids" value="kids" v-model="filters" />
-          <label for="kids">Pro děti</label>
-          <input type="checkbox" id="nature" value="nature" v-model="filters" />
-          <label for="nature">V přírodě</label>
+        <b-dropdown class="mx-1" right text="Relax">
+          <b-dropdown-item @click="toggleFilter('cinema')">
+            <input type="checkbox" id="cinema" value="cinema" v-model="filters" />
+            <label for="cinema">Kino</label>
+          </b-dropdown-item>
+          <b-dropdown-item @click="toggleFilter('walk')">
+            <input type="checkbox" id="walk" value="walk" v-model="filters" />
+            <label for="walk">Procházka</label>
+          </b-dropdown-item>
+          <b-dropdown-item @click="toggleFilter('health')">
+            <input type="checkbox" id="health" value="health" v-model="filters" />
+            <label for="health">Pro zdraví</label>
+          </b-dropdown-item>
+        </b-dropdown>
 
-          <p>Sportovní aktivity</p>
-          <input type="checkbox" id="swim" value="swim" v-model="filters" />
-          <label for="swim">Koupání</label>
-          <input type="checkbox" id="ride" value="ride" v-model="filters" />
-          <label for="ride">Cyklistika</label>
-        </div>
+        <b-dropdown class="mx-1" right text="Rodinné aktivity">
+          <b-dropdown-item @click="toggleFilter('kids')">
+            <input type="checkbox" id="kids" value="kids" v-model="filters" />
+            <label for="kids">Pro děti</label>
+          </b-dropdown-item>
+
+          <b-dropdown-item @click="toggleFilter('nature')">
+            <input type="checkbox" id="nature" value="nature" v-model="filters" />
+            <label for="nature">V přírodě</label>
+          </b-dropdown-item>
+        </b-dropdown>
+
+        <b-dropdown class="mx-1" right text="Sportovní aktivity">
+          <b-dropdown-item @click="toggleFilter('swim')">
+            <input type="checkbox" id="swim" value="swim" v-model="filters" />
+            <label for="swim">Koupání</label>
+          </b-dropdown-item>
+
+          <b-dropdown-item @click="toggleFilter('swim')">
+            <input type="checkbox" id="ride" value="ride" v-model="filters" />
+            <label for="ride">Cyklistika</label>
+          </b-dropdown-item>
+        </b-dropdown>
+      </div>
+      <!-- </div> -->
+      <div id="checkboxesOutput">
         <div v-for="place in places" :key="place.name">
           <h2>
             <input type="checkbox" :id="place.name" :value="place.name" v-model="selection" />
@@ -42,6 +69,7 @@
           <p>{{ place.outputDescription }}</p>
         </div>
       </div>
+
       <div class="mapDisplay">
         <Map :places="mapPlaces" />
       </div>
@@ -68,7 +96,7 @@ export default {
   },
   data() {
     return {
-      filters: ["church"],
+      filters: [],
       cities: cities,
       selection: [],
       selectedCity: this.city || ""
@@ -94,6 +122,13 @@ export default {
         "&destination=" +
         encodeURIComponent(places[places.length - 1].outputName);
       return urlOrigin + urlWaypoints + urlDestination;
+    },
+    toggleFilter(filterName) {
+      if (this.filters.includes(filterName)) {
+        this.filters = this.filters.filter(item => item !== filterName);
+      } else {
+        this.filters.push(filterName);
+      }
     }
   },
   computed: {
@@ -114,14 +149,63 @@ export default {
 };
 </script>
 <style scoped>
-.pagePosition {
+.mapDisplay {
+  display: inline-block;
+}
+/* .checkboxSection {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+} */
+.checkboxSection {
+  padding-bottom: 80px;
 }
-select:invalid {
-  color: grey;
+.mx-1 {
+  margin: 1px;
 }
-option {
-  color: black;
+.margin {
+  margin: 5px;
+}
+#checkboxes,
+#checkboxesOutput {
+  width: 100vw;
+}
+@media screen and (max-width: 790px) {
+  #checkboxes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1271px) {
+  .mapDisplay {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+  select:invalid {
+    color: grey;
+  }
+  option {
+    color: black;
+  }
+
+  #checkboxesOutput {
+    width: calc(100vw - 440px);
+    margin-top: -100px;
+  }
+  .checkboxSection {
+    width: calc(100vw - 400px);
+    overflow-y: scroll;
+    height: 220px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+  }
+  select {
+    font-size: 20px;
+  }
+  #checkboxes {
+    display: flex;
+    flex-direction: row;
+  }
 }
 </style>
