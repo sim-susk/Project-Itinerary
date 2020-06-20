@@ -1,12 +1,15 @@
 <template>
   <div class="city">
-    <router-link :to="{ path: 'itinerary/' + url }">Link</router-link>
-    <div class="item">
-      <p class="text">{{ text }}</p>
-      <img class="img" :src="`/assets/img-places/${imgSrc}`" />
-      <h1 class="name">{{ name }}</h1>
-      <h2 class="title">{{ title }}</h2>
-    </div>
+    <router-link :to="{ path: 'itinerary/' + url }">
+      <div class="item">
+        <p class="text">{{ text }}</p>
+        <img class="img" :src="`/assets/img-places/${imgSrc}`" />
+        <div class="content">
+          <h1 class="name">{{ name }}</h1>
+          <h2 class="title">{{ title }}</h2>
+        </div>
+      </div>
+    </router-link>
     <router-view></router-view>
   </div>
 </template>
@@ -14,59 +17,72 @@
 <script>
 export default {
   name: "City",
-  props: ["id", "url", "name", "title", "text", "imgSrc", "altSrc"],
+  props: ["id", "url", "name", "title", "text", "imgSrc", "altSrc"]
 };
 </script>
 
-<style>
+<style scoped>
 /* Nejmenší rozlišení */
-html {
-  background-color: rgb(254, 250, 242);
-}
 
 .item {
   position: relative;
   height: 400px;
+  background-color: grey;
+  border-radius: 20px;
 }
 
 .title,
 .name {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100px;
-  width: 100%;
   color: white;
   z-index: 1;
   border-radius: 20px 20px 0 0;
 }
 
 .title {
-  margin-top: 60px;
+  /* margin-top: 80px; */
   font-size: 1em;
   font-style: italic;
+  padding: 0 5px;
 }
 
 .name {
-  font-size: 2em;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding-top: 10px;
+  font-size: 1.7em;
+
+  /* padding-top: 10px; */
+  position: relative;
 }
 
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px 20px 0px 0;
+}
+.city a:hover {
+  text-decoration: none;
+}
 .text {
   z-index: 2;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
+
+  position: relative;
   background-color: rgb(181, 179, 179);
-  display: none;
-  font-size: 1em;
-  line-height: 1.5;
-  text-align: justify;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
   padding: 30px;
   border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  color: black;
 }
 
 img {
@@ -74,27 +90,24 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .item:hover .text {
   display: block;
-}
-
-* {
-  box-sizing: border-box;
+  opacity: 1;
 }
 
 .city {
   display: block;
   text-align: center;
   border-radius: 10px;
-  padding: 20px;
+  margin: 20px;
+  /* padding: 20px; */
 }
 
-.places {
-  display: block;
-  background-color: rgb(254, 250, 242);
-}
 /* Tablet */
 @media screen and (min-width: 541px) and (max-width: 960px) {
   .city {
@@ -104,29 +117,15 @@ img {
 
     width: calc(50% - 20px);
 
-    padding: 10px;
-    margin: 10px;
-  }
-
-  .places {
-    display: flex;
-    flex-wrap: wrap;
+    /* padding: 10px; */
+    margin: 8px;
   }
 }
-
 /* PC */
 @media screen and (min-width: 961px) {
-}
-
-.kontejner {
-  display: row;
-  margin: 10px;
-  width: 33%;
-}
-
-.places {
-  /* display: flex; */
-  padding: 20px;
-  margin: 20px;
+  .city {
+    width: calc(33% - 40px);
+    justify-content: center;
+  }
 }
 </style>

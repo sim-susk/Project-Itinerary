@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="sm">
+    <b-navbar toggleable="md">
       <!-- type="light" variant="light" -->
 
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
@@ -20,13 +20,9 @@
             <!-- <b-nav-text>Přehled měst</b-nav-text> -->
 
             <b-nav-item-dropdown text="Přehled měst" right class="navbar-text">
-              <b-dropdown-item href="Search"
-                >Hledej podle krajů</b-dropdown-item
-              >
+              <b-dropdown-item href="Search">Hledej podle krajů</b-dropdown-item>
               <b-dropdown-item href="Top5">Top 5</b-dropdown-item>
-              <b-dropdown-item href="TravelWW"
-                >Cestujeme světově</b-dropdown-item
-              >
+              <b-dropdown-item href="TravelWW">Cestujeme světově</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-nav-item>
           <b-nav-item to="/itinerary/">
@@ -47,7 +43,7 @@
 
 <script>
 export default {
-  name: "Menu",
+  name: "Menu"
 };
 </script>
 
