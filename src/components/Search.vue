@@ -81,17 +81,31 @@
             <input type="checkbox" :id="place.name" :value="place.name" v-model="selection" />
           </div>
           <div class="wholeOutput">
-            <h2>{{ place.name }}</h2>
-            <p>{{ place.outputAddress }}</p>
-            <p>{{ place.outputDescription }}</p>
-            <hr />
+            <label :for="place.name">
+              <h2>{{ place.name }}</h2>
+              <p>{{ place.outputAddress }}</p>
+              <p>{{ place.outputDescription }}</p>
+              <hr />
+            </label>
           </div>
         </div>
         <div class="links">
           <div class="linksContainer" v-if="mapPlaces.length >= 2">
-            <a :href="generateGoogleMapLink('walking')" class="outputButton">Idem pešo!</a>
-            <a :href="generateGoogleMapLink('transit')" class="outputButton">Idem MHD!</a>
-            <a :href="generateGoogleMapLink('driving')" class="outputButton">Idem autom!</a>
+            <a
+              :href="generateGoogleMapLink('walking')"
+              target="_blank"
+              class="outputButton"
+            >Idem pešo!</a>
+            <a
+              :href="generateGoogleMapLink('transit')"
+              target="_blank"
+              class="outputButton"
+            >Idem MHD!</a>
+            <a
+              :href="generateGoogleMapLink('driving')"
+              target="_blank"
+              class="outputButton"
+            >Idem autom!</a>
           </div>
         </div>
       </div>
@@ -181,10 +195,6 @@ export default {
 .outputCheckbox {
   margin: 9px;
 }
-/* .checkboxSection {
-  display: flex;
-  align-items: center;
-} */
 .checkboxSection {
   padding-bottom: 80px;
   font-family: sans-serif;
