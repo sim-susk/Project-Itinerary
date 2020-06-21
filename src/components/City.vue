@@ -1,6 +1,8 @@
 <template>
   <div class="city">
-    <router-link :to="{ path: 'itinerary/' + url }">
+    
+
+    <router-link :to="{ path: '/itinerary/' + url }">
       <div class="item">
         <p class="text">{{ text }}</p>
         <img class="img" :src="`/assets/img-places/${imgSrc}`" />
@@ -25,7 +27,7 @@ export default {
 .item {
   position: relative;
   height: 400px;
-  background-color: grey;
+  background-color: rgb(171, 171, 171);
   border-radius: 20px;
 }
 
@@ -51,13 +53,14 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   width: 100%;
-  min-height: 120px;
+  min-height: 150px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   border-radius: 20px 20px 0px 0;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 14%, rgba(0,0,0,0) 100%);
 }
 .city a:hover {
   text-decoration: none;
@@ -67,7 +70,9 @@ export default {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: rgb(181, 179, 179);
+  background-color: rgb(3, 27, 47);
+  color: white;
+
   font-size: 16px;
   line-height: 18px;
   text-align: left;
@@ -75,7 +80,7 @@ export default {
   border-radius: 20px;
   opacity: 0;
   transition: opacity 0.4s;
-  color: black;
+
 }
 
 img {

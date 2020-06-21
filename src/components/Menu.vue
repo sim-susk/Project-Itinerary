@@ -41,7 +41,7 @@ export default {
 .navbar {
   margin: 0;
   padding: 0;
-  background-color: rgb(254, 246, 242);
+  background-color: rgb(253, 250, 242);
 }
 
 .navbar-collapse.collapse {

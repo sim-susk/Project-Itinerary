@@ -1,7 +1,11 @@
 <template>
   <div class="places">
+    
+   
+    <h5> {{pageData.myTitle }}</h5>
+  
     <City
-      v-for="(city, index) in cities"
+      v-for="(city, index) in pageData.myCities"
       :key="index"
       :id="city.id"
       :url="city.url"
@@ -18,21 +22,54 @@
 import City from "./City";
 
 import { cities } from "../placesData.js";
+// import AboutUsVue from './AboutUs.vue';
 
 export default {
   name: "Places",
   components: {
     City: City
   },
-  data() {
+  computed: {
+    placeType() {
+      return this.$route.params.placeType
+    },
+
+  pageData() {
+    let myTitle = "Zajímavé destinace v České Republice"
+    let myCities = cities
+
+    if (this.placeType === "top5") {
+      myTitle = "Nejkrásnějších pět měst České Republiky"
+      myCities = myCities.filter((city) => city.tags === "top5")
+    } else if (this.placeType === "region") {
+      myTitle = "To nejzajímavější v kraji"
+      myCities = myCities.filter((city) => city.tags === "region")
+    } else if (this.placeType === "travelWW") {
+      myTitle = "Světové destinace v České Republice"
+      myCities = myCities.filter((city) => city.tags === "travelWW")
+    } 
+
     return {
-      cities: cities
+      myTitle: myTitle,
+      myCities: myCities,
     };
+  }
   }
 };
 </script>
 
 <style scoped>
+.places h5 {
+  background-color: grey;
+  color: beige;
+  height: auto;
+  width: calc(100vw - 25px);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+}
+
 .places {
   display: block;
   background-color: rgb(254, 250, 242);

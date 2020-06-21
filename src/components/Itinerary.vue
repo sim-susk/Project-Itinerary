@@ -1,5 +1,8 @@
 <template>
   <Search :city="$route.params.id" />
+
+
+  
 </template>
 <script>
 import Search from "./Search";
