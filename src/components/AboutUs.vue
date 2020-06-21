@@ -5,9 +5,9 @@
       vlastní itinerář cesty do vybraného místa v České Reublice. Jako uživatel
       si nejprve vyberte cílovou destinaci, kam chcete jet. K tomu může
       posloužit
-      <strong>přehled měst</strong> v menu v hlavičče stránky. Když už
+      <router-link to="/places/all">přehled měst</router-link>v menu v hlavičče stránky. Když už
       víte kam zamíří vše kroky, naplánujte si vlastní itinerář
-      <strong>zde</strong> Do formuláře stačí zakliknout body - místa, která
+      <router-link to="/itinerary">zde</router-link>Do formuláře stačí zakliknout body - místa, která
       chcete navštívit a následně se trasa vykreslí a přehledně zobrazí na mapě.
       S body je možné nadále pracovat. Využijte i další funkce, jako stav
       dopravy, počasí ve vybrané lokalitě a místní aktuality.
