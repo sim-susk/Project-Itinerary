@@ -31,7 +31,7 @@ export default {
   width: 100vw;
   height: 300px;
 }
-@media screen and (min-width: 1271px) {
+@media screen and (min-width: 1310px) {
   .vue-map-container {
     width: 450px;
     height: calc(100vh - 116px);
