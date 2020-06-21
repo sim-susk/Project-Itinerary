@@ -30,7 +30,7 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     { path: '/aboutUs', component: AboutUs },
-    { path: '/home', component: Home },
+    { path: '/', component: Home },
     { path: '/itinerary/', component: Itinerary },
     { path: '/itinerary/:id', component: Itinerary },
     { path: '/places/:placeType', component: Places },

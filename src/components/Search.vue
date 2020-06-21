@@ -296,7 +296,8 @@ hr {
   .linksContainer {
     width: calc(100vw - 470px);
   }
-  .wholeOutput p {
+  .wholeOutput p,
+  .wholeOutput h2 {
     padding-right: 45px;
   }
 }
