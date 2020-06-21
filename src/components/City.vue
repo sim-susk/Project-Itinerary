@@ -22,8 +22,6 @@ export default {
 </script>
 
 <style scoped>
-/* Nejmenší rozlišení */
-
 .item {
   position: relative;
   height: 400px;
@@ -39,7 +37,6 @@ export default {
 }
 
 .title {
-  /* margin-top: 80px; */
   font-size: 1em;
   font-style: italic;
   padding: 0 5px;
@@ -47,8 +44,6 @@ export default {
 
 .name {
   font-size: 1.7em;
-
-  /* padding-top: 10px; */
   position: relative;
 }
 
@@ -71,10 +66,8 @@ export default {
   z-index: 2;
   width: 100%;
   height: 100%;
-
   position: relative;
   background-color: rgb(181, 179, 179);
-
   font-size: 16px;
   line-height: 18px;
   text-align: left;
@@ -105,23 +98,16 @@ img {
   text-align: center;
   border-radius: 10px;
   margin: 20px;
-  /* padding: 20px; */
 }
 
-/* Tablet */
 @media screen and (min-width: 541px) and (max-width: 960px) {
   .city {
-    /* pri vsech rozlisenich stejny???? */
-    /* font-size: 3em; */
     align-items: center;
-
     width: calc(50% - 20px);
-
-    /* padding: 10px; */
     margin: 8px;
   }
 }
-/* PC */
+
 @media screen and (min-width: 961px) {
   .city {
     width: calc(33% - 40px);

@@ -2,7 +2,6 @@
   <div class="search">
     <div class="pagePosition">
       <div class="checkboxSection" id="checkboxes">
-        <!-- <div class="checkboxesAlign"> -->
         <select class="margin" v-model="selectedCity" required>
           <option hidden disabled value>Prosím vyberte</option>
           <option v-for="c in cities" :key="c.id" :value="c.url">{{ c.name }}</option>
@@ -76,27 +75,29 @@
           </b-dropdown-text>
         </b-dropdown>
       </div>
-      <!-- </div> -->
       <div id="checkboxesOutput">
-        <div v-for="place in places" :key="place.name">
-          <h2>
+        <div v-for="place in places" :key="place.name" class="outputContainer">
+          <div class="outputCheckbox">
             <input type="checkbox" :id="place.name" :value="place.name" v-model="selection" />
-            {{ place.name }}
-          </h2>
-          <p>{{ place.outputAddress }}</p>
-          <p>{{ place.outputDescription }}</p>
+          </div>
+          <div class="wholeOutput">
+            <h2>{{ place.name }}</h2>
+            <p>{{ place.outputAddress }}</p>
+            <p>{{ place.outputDescription }}</p>
+            <hr />
+          </div>
+        </div>
+        <div class="links">
+          <div class="linksContainer" v-if="mapPlaces.length >= 2">
+            <a :href="generateGoogleMapLink('walking')" class="outputButton">Idem pešo!</a>
+            <a :href="generateGoogleMapLink('transit')" class="outputButton">Idem MHD!</a>
+            <a :href="generateGoogleMapLink('driving')" class="outputButton">Idem autom!</a>
+          </div>
         </div>
       </div>
 
       <div class="mapDisplay">
         <Map :places="mapPlaces" />
-      </div>
-    </div>
-    <div class="links">
-      <div v-if="mapPlaces.length >= 2">
-        <a :href="generateGoogleMapLink('walking')">Idem pešo!</a>
-        <a :href="generateGoogleMapLink('transit')">Idem MHD!</a>
-        <a :href="generateGoogleMapLink('driving')">Idem autom!</a>
       </div>
     </div>
   </div>
@@ -167,8 +168,18 @@ export default {
 };
 </script>
 <style scoped>
+.outputContainer {
+  display: flex;
+}
+.wholeOutput {
+  padding: 0 0 10px 10px;
+}
 .mapDisplay {
   display: inline-block;
+  margin-top: 15px;
+}
+.outputCheckbox {
+  margin: 9px;
 }
 /* .checkboxSection {
   display: flex;
@@ -176,6 +187,8 @@ export default {
 } */
 .checkboxSection {
   padding-bottom: 80px;
+  font-family: sans-serif;
+  background-color: rgb(254, 250, 242);
 }
 .mx-1 {
   margin: 1px;
@@ -187,6 +200,9 @@ export default {
 #checkboxesOutput {
   width: 100vw;
 }
+#checkboxesOutput {
+  padding: 20px;
+}
 
 .b-dropdown-text {
   padding: 0;
@@ -196,6 +212,27 @@ export default {
   cursor: pointer;
   padding: 0.25rem 1.5rem;
   display: block;
+}
+
+.outputButton {
+  text-decoration: none;
+  color: #6c757d;
+  padding: 20px;
+  cursor: pointer;
+  border: 1px #6c757d solid;
+  border-radius: 20px;
+}
+.outputButton:hover {
+  background-color: #6c757d;
+  color: white;
+}
+.linksContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+hr {
+  margin-right: 30px;
 }
 @media screen and (max-width: 790px) {
   #checkboxes {
@@ -209,11 +246,12 @@ export default {
   }
 }
 
-@media screen and (min-width: 1271px) {
+@media screen and (min-width: 1310px) {
   .mapDisplay {
     position: fixed;
     right: 0;
     bottom: 0;
+    margin: 0;
   }
   select:invalid {
     color: grey;
@@ -227,6 +265,7 @@ export default {
     margin-top: -100px;
     max-height: calc(100vh - 116px - 120px);
     overflow-y: scroll;
+    overflow-x: hidden;
   }
   .checkboxSection {
     width: calc(100vw - 400px);
@@ -235,6 +274,7 @@ export default {
     padding: 25px;
     display: flex;
     align-items: flex-start;
+    padding-right: 460px;
   }
   select {
     font-size: 20px;
@@ -242,6 +282,12 @@ export default {
   #checkboxes {
     display: flex;
     flex-direction: row;
+  }
+  .linksContainer {
+    width: calc(100vw - 470px);
+  }
+  .wholeOutput p {
+    padding-right: 45px;
   }
 }
 </style>
