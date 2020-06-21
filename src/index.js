@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Itinerary from './components/Itinerary';
 import Places from './components/Places';
 import App from './components/App';
+import PageNotFound from './components/PageNotFound';
 
 import './index.html';
 
@@ -34,6 +35,8 @@ const router = new VueRouter({
     { path: '/itinerary/:id', component: Itinerary },
     { path: '/places/:placeType', component: Places },
     { path: '/places', component: Places },
+    
+    { path: '*', component: PageNotFound }
   ],
 });
 
