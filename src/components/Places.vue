@@ -57,8 +57,15 @@ export default {
 </script>
 
 <style scoped>
-h5 {
-  justify-content: center;
+.places h5 {
+  background-color: grey;
+  color: beige;
+  height: auto;
+  width: calc(100vw - 25px);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
 }
 
 .places {

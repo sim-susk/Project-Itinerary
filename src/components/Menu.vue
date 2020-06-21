@@ -16,7 +16,7 @@
           <b-nav-item to="/aboutUs">
             <b-nav-text>O aplikaci</b-nav-text>
           </b-nav-item>
-          <b-nav-item to="/places">
+          <!-- <b-nav-item to="/places"> -->
             <!-- <b-nav-text>Přehled měst</b-nav-text> -->
 
             <b-nav-item-dropdown text="Přehled měst" right class="navbar-text">
@@ -24,7 +24,7 @@
               <b-dropdown-item to="/places/top5">Top 5</b-dropdown-item>
               <b-dropdown-item to="/places/travelWW">Cestujeme světově</b-dropdown-item>
             </b-nav-item-dropdown>
-          </b-nav-item>
+          <!-- </b-nav-item> -->
           <b-nav-item to="/itinerary/">
             <b-nav-text>Plánovač</b-nav-text>
           </b-nav-item>
@@ -52,7 +52,7 @@ export default {
 .navbar {
   margin: 0;
   padding: 0;
-  background-color: rgb(254, 246, 242);
+  background-color: rgb(253, 250, 242);
 }
 
 .navbar-collapse.collapse {
