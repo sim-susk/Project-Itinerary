@@ -16,9 +16,10 @@
           </b-nav-item>
 
           <b-nav-item-dropdown text="Přehled měst" right class="navbar-text">
-            <b-dropdown-item href="Search">Hledej podle krajů</b-dropdown-item>
-            <b-dropdown-item href="Top5">Top 5</b-dropdown-item>
-            <b-dropdown-item href="TravelWW">Cestujeme světově</b-dropdown-item>
+            <b-dropdown-item to="/places/all">Zobraz vše</b-dropdown-item>
+            <b-dropdown-item to="/places/region">Hledej podle krajů</b-dropdown-item>
+            <b-dropdown-item to="/places/top5">Top 5</b-dropdown-item>
+            <b-dropdown-item to="/places/travelWW">Cestujeme světově</b-dropdown-item>
           </b-nav-item-dropdown>
 
           <b-nav-item to="/itinerary/">
