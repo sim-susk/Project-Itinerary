@@ -17,15 +17,14 @@ export default {
 </script>
 
 <style lang="css">
-/* Styly??????? */
-
 * {
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   font-family: sans-serif;
-  background-color: rgb(254, 250, 242);
+  background-color: rgb(254, 250, 242) !important;
 }
 </style>
 

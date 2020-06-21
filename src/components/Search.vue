@@ -1,56 +1,103 @@
 <template>
   <div class="search">
     <div class="pagePosition">
-      <div class="checkboxSection">
-        <div>
-          <select v-model="selectedCity" required>
-            <option hidden disabled value>Prosím vyberte</option>
-            <option v-for="c in cities" :key="c.id" :value="c.url">{{ c.name }}</option>
-          </select>
-          <p>Historické památky</p>
-          <input type="checkbox" id="church" value="church" v-model="filters" />
-          <label for="church">Kostel</label>
-          <input type="checkbox" id="museum" value="museum" v-model="filters" />
-          <label for="museum">Muzeum</label>
+      <div class="checkboxSection" id="checkboxes">
+        <select class="margin" v-model="selectedCity" required>
+          <option hidden disabled value>Prosím vyberte</option>
+          <option v-for="c in cities" :key="c.id" :value="c.url">{{ c.name }}</option>
+        </select>
 
-          <p>Relax</p>
-          <input type="checkbox" id="cinema" value="cinema" v-model="filters" />
-          <label for="cinema">Kino</label>
-          <input type="checkbox" id="walk" value="walk" v-model="filters" />
-          <label for="walk">Procházka</label>
-          <input type="checkbox" id="health" value="health" v-model="filters" />
-          <label for="health">Pro zdraví</label>
+        <b-dropdown class="mx-1" right text="Historické památky">
+          <b-dropdown-text>
+            <label for="church">
+              <input type="checkbox" id="church" value="church" v-model="filters" />
+              Kostel
+            </label>
+          </b-dropdown-text>
+          <b-dropdown-text>
+            <label for="museum">
+              <input type="checkbox" id="museum" value="museum" v-model="filters" />
+              Muzeum
+            </label>
+          </b-dropdown-text>
+        </b-dropdown>
 
-          <p>Rodinné aktivity</p>
-          <input type="checkbox" id="kids" value="kids" v-model="filters" />
-          <label for="kids">Pro děti</label>
-          <input type="checkbox" id="nature" value="nature" v-model="filters" />
-          <label for="nature">V přírodě</label>
+        <b-dropdown class="mx-1" right text="Relax">
+          <b-dropdown-text>
+            <label for="cinema">
+              <input type="checkbox" id="cinema" value="cinema" v-model="filters" />
+              Kino
+            </label>
+          </b-dropdown-text>
+          <b-dropdown-text>
+            <label for="walk">
+              <input type="checkbox" id="walk" value="walk" v-model="filters" />
+              Procházka
+            </label>
+          </b-dropdown-text>
+          <b-dropdown-text>
+            <label for="health">
+              <input type="checkbox" id="health" value="health" v-model="filters" />
+              Pro zdraví
+            </label>
+          </b-dropdown-text>
+        </b-dropdown>
 
-          <p>Sportovní aktivity</p>
-          <input type="checkbox" id="swim" value="swim" v-model="filters" />
-          <label for="swim">Koupání</label>
-          <input type="checkbox" id="ride" value="ride" v-model="filters" />
-          <label for="ride">Cyklistika</label>
-        </div>
-        <div v-for="place in places" :key="place.name">
-          <h2>
+        <b-dropdown class="mx-1" right text="Rodinné aktivity">
+          <b-dropdown-text>
+            <label for="kids">
+              <input type="checkbox" id="kids" value="kids" v-model="filters" />
+              Pro děti
+            </label>
+          </b-dropdown-text>
+
+          <b-dropdown-text>
+            <label for="nature">
+              <input type="checkbox" id="nature" value="nature" v-model="filters" />
+              V přírodě
+            </label>
+          </b-dropdown-text>
+        </b-dropdown>
+
+        <b-dropdown class="mx-1" right text="Sportovní aktivity">
+          <b-dropdown-text>
+            <label for="swim">
+              <input type="checkbox" id="swim" value="swim" v-model="filters" />
+              Koupání
+            </label>
+          </b-dropdown-text>
+
+          <b-dropdown-text>
+            <label for="ride">
+              <input type="checkbox" id="ride" value="ride" v-model="filters" />
+              Cyklistika
+            </label>
+          </b-dropdown-text>
+        </b-dropdown>
+      </div>
+      <div id="checkboxesOutput">
+        <div v-for="place in places" :key="place.name" class="outputContainer">
+          <div class="outputCheckbox">
             <input type="checkbox" :id="place.name" :value="place.name" v-model="selection" />
-            {{ place.name }}
-          </h2>
-          <p>{{ place.outputAddress }}</p>
-          <p>{{ place.outputDescription }}</p>
+          </div>
+          <div class="wholeOutput">
+            <h2>{{ place.name }}</h2>
+            <p>{{ place.outputAddress }}</p>
+            <p>{{ place.outputDescription }}</p>
+            <hr />
+          </div>
+        </div>
+        <div class="links">
+          <div class="linksContainer" v-if="mapPlaces.length >= 2">
+            <a :href="generateGoogleMapLink('walking')" class="outputButton">Idem pešo!</a>
+            <a :href="generateGoogleMapLink('transit')" class="outputButton">Idem MHD!</a>
+            <a :href="generateGoogleMapLink('driving')" class="outputButton">Idem autom!</a>
+          </div>
         </div>
       </div>
+
       <div class="mapDisplay">
         <Map :places="mapPlaces" />
-      </div>
-    </div>
-    <div class="links">
-      <div v-if="mapPlaces.length >= 2">
-        <a :href="generateGoogleMapLink('walking')">Idem pešo!</a>
-        <a :href="generateGoogleMapLink('transit')">Idem MHD!</a>
-        <a :href="generateGoogleMapLink('driving')">Idem autom!</a>
       </div>
     </div>
   </div>
@@ -68,7 +115,7 @@ export default {
   },
   data() {
     return {
-      filters: ["church"],
+      filters: [],
       cities: cities,
       selection: [],
       selectedCity: this.city || ""
@@ -94,6 +141,13 @@ export default {
         "&destination=" +
         encodeURIComponent(places[places.length - 1].outputName);
       return urlOrigin + urlWaypoints + urlDestination;
+    },
+    toggleFilter(filterName) {
+      if (this.filters.includes(filterName)) {
+        this.filters = this.filters.filter(item => item !== filterName);
+      } else {
+        this.filters.push(filterName);
+      }
     }
   },
   computed: {
@@ -114,14 +168,126 @@ export default {
 };
 </script>
 <style scoped>
-.pagePosition {
+.outputContainer {
   display: flex;
-  justify-content: space-between;
 }
-select:invalid {
-  color: grey;
+.wholeOutput {
+  padding: 0 0 10px 10px;
 }
-option {
-  color: black;
+.mapDisplay {
+  display: inline-block;
+  margin-top: 15px;
+}
+.outputCheckbox {
+  margin: 9px;
+}
+/* .checkboxSection {
+  display: flex;
+  align-items: center;
+} */
+.checkboxSection {
+  padding-bottom: 80px;
+  font-family: sans-serif;
+  background-color: rgb(254, 250, 242);
+}
+.mx-1 {
+  margin: 1px;
+}
+.margin {
+  margin: 5px;
+}
+#checkboxes,
+#checkboxesOutput {
+  width: 100vw;
+}
+#checkboxesOutput {
+  padding: 20px;
+}
+
+.b-dropdown-text {
+  padding: 0;
+}
+
+.b-dropdown-text label {
+  cursor: pointer;
+  padding: 0.25rem 1.5rem;
+  display: block;
+}
+
+.outputButton {
+  text-decoration: none;
+  color: #6c757d;
+  padding: 20px;
+  cursor: pointer;
+  border: 1px #6c757d solid;
+  border-radius: 20px;
+}
+.outputButton:hover {
+  background-color: #6c757d;
+  color: white;
+}
+.linksContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+hr {
+  margin-right: 30px;
+}
+@media screen and (max-width: 790px) {
+  #checkboxes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 791px) and (max-width: 1270px) {
+  .checkboxSection {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1310px) {
+  .mapDisplay {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  select:invalid {
+    color: grey;
+  }
+  option {
+    color: black;
+  }
+
+  #checkboxesOutput {
+    width: calc(100vw - 400px);
+    margin-top: -100px;
+    max-height: calc(100vh - 116px - 120px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .checkboxSection {
+    width: calc(100vw - 400px);
+    overflow-y: scroll;
+    height: 220px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    padding-right: 460px;
+  }
+  select {
+    font-size: 20px;
+  }
+  #checkboxes {
+    display: flex;
+    flex-direction: row;
+  }
+  .linksContainer {
+    width: calc(100vw - 470px);
+  }
+  .wholeOutput p {
+    padding-right: 45px;
+  }
 }
 </style>

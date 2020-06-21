@@ -1,8 +1,6 @@
 <template>
-  <div>
+  <div class="menuButtons">
     <b-navbar toggleable="md">
-      <!-- type="light" variant="light" -->
-
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
       <img class="img-menu" :src="`/assets/img/bg-img.png`" />
 
@@ -33,13 +31,6 @@
       </b-collapse>
     </b-navbar>
   </div>
-  <!-- <router-link to="/aboutUs">O nás</router-link>
-    <router-link to="/home">Domů</router-link>
-    <router-link to="/itinerary">Plánovač</router-link>
-    <router-link to="/places">Přehled měst</router-link>
-
-    <h1>Vue router</h1>
-  -->
 </template>
 
 <script>
@@ -49,7 +40,6 @@ export default {
 </script>
 
 <style>
-/* Nejmenší rozlišení */
 .navbar {
   margin: 0;
   padding: 0;
@@ -57,39 +47,16 @@ export default {
 }
 
 .navbar-collapse.collapse {
-  text-align: center;
   justify-content: center;
   padding: 0;
 }
 
 .navbar-text {
-  /* nefunguje barva a styl pisma, zarovnani na sted*/
-  color: rgb(132, 178, 135);
   font-weight: bold;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-
-  background-color: rgb(215, 120, 111);
-  border-radius: 18px;
-  width: 130px;
-  height: 60px;
-}
-
-.dropdown-menu {
-  /* nefunguje */
-  border-radius: 15px;
-  background-color: coral;
 }
 
 .img-menu {
   width: 120px;
   height: 100px;
 }
-
-/* Tablet */
-/* @media screen and (min-width: 541px) and (max-width:960px)  */
-
-/* PC */
-/* @media screen and (min-width: 961px) */
 </style>

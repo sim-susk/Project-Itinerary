@@ -1,5 +1,4 @@
 <template>
-  <!-- <Search :city="$route.params.id" /> -->
   <Search :city="$route.params.id" />
 
 
@@ -10,7 +9,7 @@ import Search from "./Search";
 export default {
   name: "Itinerary",
   components: {
-    Search,
-  },
+    Search
+  }
 };
 </script>
