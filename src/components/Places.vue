@@ -1,5 +1,7 @@
 <template>
   <div class="places">
+    
+   
     <h5> {{pageData.myTitle }}</h5>
   
     <City
@@ -39,13 +41,13 @@ export default {
     if (this.placeType === "top5") {
       myTitle = "Nejkrásnějších pět měst České Republiky"
       myCities = myCities.filter((city) => city.tags === "top5")
-    } else if (this.placeType === "kraj") {
+    } else if (this.placeType === "region") {
       myTitle = "To nejzajímavější v kraji"
-      myCities = myCities.filter((city) => city.tags === "kraj")
+      myCities = myCities.filter((city) => city.tags === "region")
     } else if (this.placeType === "travelWW") {
       myTitle = "Světové destinace v České Republice"
       myCities = myCities.filter((city) => city.tags === "travelWW")
-    }
+    } 
 
     return {
       myTitle: myTitle,

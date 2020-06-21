@@ -1,7 +1,8 @@
 <template>
   <div class="city">
+    
 
-    <router-link :to="{ path: 'itinerary/' + url }">
+    <router-link :to="{ path: '/itinerary/' + url }">
       <div class="item">
         <p class="text">{{ text }}</p>
         <img class="img" :src="`/assets/img-places/${imgSrc}`" />

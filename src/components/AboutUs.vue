@@ -27,6 +27,8 @@
 export default {
   name: "AboutUs",
 };
+
+
 </script>
 
 <style>
