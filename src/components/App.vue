@@ -23,8 +23,9 @@ export default {
 
 html,
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   background-color: rgb(254, 250, 242) !important;
+  color: #67696d !important;
 }
 </style>
 

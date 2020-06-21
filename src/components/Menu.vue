@@ -2,13 +2,14 @@
   <div class="menuButtons">
     <b-navbar toggleable="md">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
-      <img class="img-menu" :src="`/assets/img/bg-img.png`" />
-
+      <router-link to="/">
+        <img class="img-menu" :src="`/assets/img/bg-img.png`" />
+      </router-link>
       <b-navbar-brand></b-navbar-brand>
 
       <b-collapse id="nav-text-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item to="/home">
+          <b-nav-item to="/">
             <b-nav-text>Domů</b-nav-text>
           </b-nav-item>
           <b-nav-item to="/aboutUs">
@@ -22,7 +23,7 @@
             <b-dropdown-item to="/places/travelWW">Cestujeme světově</b-dropdown-item>
           </b-nav-item-dropdown>
 
-          <b-nav-item to="/itinerary/">
+          <b-nav-item to="/itinerary/" id="noBorder">
             <b-nav-text>Plánovač</b-nav-text>
           </b-nav-item>
         </b-navbar-nav>
@@ -56,5 +57,21 @@ export default {
 .img-menu {
   width: 120px;
   height: 100px;
+}
+
+.menuButtons {
+  font-size: 22px;
+}
+
+.nav-item:hover li {
+  color: #4b4b48 !important;
+}
+.nav-item {
+  padding: 0 5px;
+  border-right: 1px #67696d solid;
+  border-radius: 1px;
+}
+#noBorder {
+  border: none;
 }
 </style>
