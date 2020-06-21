@@ -61,7 +61,7 @@ export default {
 <style scoped>
 .places h5 {
   background-color: grey;
-  color: beige;
+  color: rgb(253, 250, 242);
   height: auto;
   width: calc(100vw - 25px);
   text-align: center;
