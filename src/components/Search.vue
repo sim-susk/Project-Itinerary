@@ -312,6 +312,7 @@ export default {
   border: 1px #ec7568 solid;
   border-radius: 5px;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 .outputButton:hover {
   background-color: #4b4b48;
@@ -343,6 +344,9 @@ hr {
     margin-left: -30px;
 
     min-height: calc(100vh - 116px - 94px - 30px);
+  }
+  .outputButton {
+    font-size: 16px;
   }
 
   select:invalid {

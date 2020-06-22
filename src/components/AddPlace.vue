@@ -162,8 +162,12 @@ export default {
     },
     onSubmit(evt) {
       evt.preventDefault();
-      alert(JSON.stringify(this.form));
-      db.ref("places").push(this.form);
+      this.$bvToast.toast(`Místo bylo úspěšně přidáno do seznamu měst`, {
+        title: "Skvělý",
+        autoHideDelay: 5000,
+        variant: "success",
+      });
+      // db.ref("places").push(this.form);
     },
   },
   computed: {

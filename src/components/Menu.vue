@@ -30,7 +30,7 @@
           <b-nav-item to="/itinerary/">
             <b-nav-text>Plánovač</b-nav-text>
           </b-nav-item>
-          <b-nav-item to="/addPlace/" id="noBorder">
+          <b-nav-item to="/add-place/" id="noBorder">
             <b-nav-text>Přidat město</b-nav-text>
           </b-nav-item>
         </b-navbar-nav>
@@ -73,7 +73,8 @@ li.navbar-text {
   font-size: 16px;
 }
 
-.nav-item:hover li, .nav-item:hover span {
+.nav-item:hover li,
+.nav-item:hover span {
   color: #999b9f !important;
 }
 
