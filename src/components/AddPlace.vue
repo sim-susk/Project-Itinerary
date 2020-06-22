@@ -30,7 +30,7 @@
             ></b-form-input>
           </b-form-group>
 
-          <b-form-group label="Popis města:" label-for="formDescription">
+          <b-form-group label="Popis místa:" label-for="formDescription">
             <b-form-input
               id="formDescription"
               v-model="form.outputDescription"

@@ -31,7 +31,7 @@
             <b-nav-text>Plánovač</b-nav-text>
           </b-nav-item>
           <b-nav-item to="/add-place/" id="noBorder">
-            <b-nav-text>Přidat město</b-nav-text>
+            <b-nav-text>Přidat místo</b-nav-text>
           </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
