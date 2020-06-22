@@ -4,9 +4,12 @@
       <div class="checkboxSection" id="checkboxes">
         <select class="margin" v-model="selectedCity" required>
           <option hidden disabled value>Prosím vyberte</option>
-          <option v-for="c in fireCities" :key="c.id" :value="c.url">{{
-            c.name
-          }}</option>
+          <option
+            v-for="(c, index) in fireCities"
+            :key="index"
+            :value="c.url"
+            >{{ c.name }}</option
+          >
         </select>
 
         <b-dropdown class="mx-1" right text="Historické památky">
