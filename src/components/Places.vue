@@ -19,8 +19,6 @@
 <script>
 import City from "./City";
 import { db } from "../db";
-// import { cities } from "../placesData.js";
-// import AboutUsVue from './AboutUs.vue';
 
 export default {
   name: "Places",

@@ -251,6 +251,10 @@ export default {
   background-color: #ec7568;
   border: 1px #ec7568 solid;
 }
+.search .dropdown .btn:hover {
+  background-color: #4b4b48;
+  border-color: #4b4b48;
+}
 </style>
 <style scoped>
 .searchResults {
@@ -310,7 +314,8 @@ export default {
   margin-bottom: 10px;
 }
 .outputButton:hover {
-  background-color: #6c757d;
+  background-color: #4b4b48;
+  border: 1px #4b4b48 solid;
   color: white;
 }
 

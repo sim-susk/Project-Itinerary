@@ -1,8 +1,9 @@
 <template>
   <div class="container">
     <p class="formIntro">
-      Pokud by jste se chtěli podělit o zajímavé město, které stojí za to navštívit a na naší stránce by nemělo chybět, prosíme vyplňte následující formulář:
-      
+      Pokud by jste se chtěli podělit o zajímavé město, které stojí za to
+      navštívit a na naší stránce by nemělo chybět, prosíme vyplňte následující
+      formulář:
     </p>
     <div class="row">
       <div class="col-md-7 ">
@@ -180,6 +181,11 @@ export default {
   background-color: #ec7568;
   border: none;
 }
+#submitButtom:hover {
+  background-color: #4b4b48;
+  border-color: #4b4b48;
+}
+
 .buttonContainer {
   text-align: center;
 }
