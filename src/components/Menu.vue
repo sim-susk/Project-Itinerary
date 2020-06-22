@@ -67,7 +67,7 @@ export default {
 }
 
 .menuButtons {
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .nav-item:hover li {

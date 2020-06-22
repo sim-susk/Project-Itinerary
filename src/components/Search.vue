@@ -2,15 +2,17 @@
   <div class="search">
     <div class="pagePosition">
       <div class="checkboxSection" id="checkboxes">
-        <select class="margin" v-model="selectedCity" required>
-          <option hidden disabled value>Prosím vyberte</option>
-          <option
+        <b-form-select class="margin" v-model="selectedCity" required>
+          <b-form-select-option hidden disabled value
+            >Prosím vyberte</b-form-select-option
+          >
+          <b-form-select-option
             v-for="(c, index) in fireCities"
             :key="index"
             :value="c.url"
-            >{{ c.name }}</option
+            >{{ c.name }}</b-form-select-option
           >
-        </select>
+        </b-form-select>
 
         <b-dropdown class="mx-1" right text="Historické památky">
           <b-dropdown-text>
@@ -249,8 +251,8 @@ export default {
   margin: 1px;
 }
 .margin {
-  margin: 5px;
   margin-left: 15px;
+  max-width: 160px;
 }
 #checkboxes,
 #checkboxesOutput {
@@ -293,13 +295,13 @@ hr {
 .wholeOutput p {
   padding-right: 15px;
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 810px) {
   #checkboxes {
     display: flex;
     flex-direction: column;
   }
 }
-@media screen and (min-width: 791px) and (max-width: 1270px) {
+@media screen and (min-width: 811px) and (max-width: 1310px) {
   .checkboxSection {
     padding-bottom: 100px;
   }
