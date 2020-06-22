@@ -23,7 +23,7 @@
                 value="church"
                 v-model="filters"
               />
-              Kostel
+              Kostely
             </label>
           </b-dropdown-text>
           <b-dropdown-text>
@@ -34,7 +34,7 @@
                 value="museum"
                 v-model="filters"
               />
-              Muzeum
+              Muzea
             </label>
           </b-dropdown-text>
         </b-dropdown>
@@ -111,7 +111,7 @@
       <div class="row searchResults">
         <div class="col-md" id="checkboxesOutput">
           <div v-if="places.length === 0">
-            Prosim vyberte nekterou z kategorii.
+            Prosím vyberte některou z kategorií.
           </div>
           <div
             v-for="place in places"

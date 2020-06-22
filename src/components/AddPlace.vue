@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <p class="formIntro">
-      Ak by ste sa s nami radi podelili o zaujimave miesto, ktore by na nasej
-      stranke urcite nemalo chybat, prosim vyplnte nasledujuci formular:
+      Pokud by jste se chtěli podělit o zajímavé město, které stojí za to navštívit a na naší stránce by nemělo chybět, prosíme vyplňte následující formulář:
+      
     </p>
     <div class="row">
       <div class="col-md-7 ">
         <b-form @submit="onSubmit" v-if="show">
-          <b-form-group label="Mesto:" label-for="formCity">
+          <b-form-group label="Město:" label-for="formCity">
             <b-form-select id="formCity" v-model="form.id" required>
               <b-form-select-option hidden disabled value
                 >Prosím vyberte</b-form-select-option
@@ -20,21 +20,21 @@
               >
             </b-form-select>
           </b-form-group>
-          <b-form-group label="Nazov:" label-for="name">
+          <b-form-group label="Název:" label-for="name">
             <b-form-input
               id="name"
               v-model="form.name"
               required
-              placeholder="Zadajte, prosim nazov"
+              placeholder="Zadajte, prosím název"
             ></b-form-input>
           </b-form-group>
 
-          <b-form-group label="Popis miesta:" label-for="formDescription">
+          <b-form-group label="Popis města:" label-for="formDescription">
             <b-form-input
               id="formDescription"
               v-model="form.outputDescription"
               required
-              placeholder="Prosim, zadajte kratky popis"
+              placeholder="Zadajte krátký popis"
             ></b-form-input>
           </b-form-group>
 
@@ -43,11 +43,11 @@
               id="outputAddress"
               v-model="form.outputAddress"
               required
-              placeholder="Zadajte prosim potiahnutim znacky na mape"
+              placeholder="Zadajte potáhnutím značky na mape"
             ></b-form-input>
           </b-form-group>
 
-          <b-form-group label="Zemepisna sirka:" label-for="latitude">
+          <b-form-group label="Zeměpisná šířka:" label-for="latitude">
             <b-form-input
               id="latitude"
               v-model="form.latitude"
@@ -55,7 +55,7 @@
             ></b-form-input>
           </b-form-group>
 
-          <b-form-group label="Zemepisna dlzka:" label-for="longitude">
+          <b-form-group label="Zeměpisná délka:" label-for="longitude">
             <b-form-input
               id="longitude"
               v-model="form.longitude"
@@ -84,7 +84,7 @@
           </b-form-group>
           <div class="buttonContainer">
             <b-button type="submit" variant="primary" id="submitButtom"
-              >Odoslat</b-button
+              >Odeslat</b-button
             >
           </div>
         </b-form>
