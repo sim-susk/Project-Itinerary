@@ -4,19 +4,31 @@
       <div class="checkboxSection" id="checkboxes">
         <select class="margin" v-model="selectedCity" required>
           <option hidden disabled value>Prosím vyberte</option>
-          <option v-for="c in cities" :key="c.id" :value="c.url">{{ c.name }}</option>
+          <option v-for="c in fireCities" :key="c.id" :value="c.url">{{
+            c.name
+          }}</option>
         </select>
 
         <b-dropdown class="mx-1" right text="Historické památky">
           <b-dropdown-text>
             <label for="church">
-              <input type="checkbox" id="church" value="church" v-model="filters" />
+              <input
+                type="checkbox"
+                id="church"
+                value="church"
+                v-model="filters"
+              />
               Kostel
             </label>
           </b-dropdown-text>
           <b-dropdown-text>
             <label for="museum">
-              <input type="checkbox" id="museum" value="museum" v-model="filters" />
+              <input
+                type="checkbox"
+                id="museum"
+                value="museum"
+                v-model="filters"
+              />
               Muzeum
             </label>
           </b-dropdown-text>
@@ -25,7 +37,12 @@
         <b-dropdown class="mx-1" right text="Relax">
           <b-dropdown-text>
             <label for="cinema">
-              <input type="checkbox" id="cinema" value="cinema" v-model="filters" />
+              <input
+                type="checkbox"
+                id="cinema"
+                value="cinema"
+                v-model="filters"
+              />
               Kino
             </label>
           </b-dropdown-text>
@@ -37,7 +54,12 @@
           </b-dropdown-text>
           <b-dropdown-text>
             <label for="health">
-              <input type="checkbox" id="health" value="health" v-model="filters" />
+              <input
+                type="checkbox"
+                id="health"
+                value="health"
+                v-model="filters"
+              />
               Pro zdraví
             </label>
           </b-dropdown-text>
@@ -53,7 +75,12 @@
 
           <b-dropdown-text>
             <label for="nature">
-              <input type="checkbox" id="nature" value="nature" v-model="filters" />
+              <input
+                type="checkbox"
+                id="nature"
+                value="nature"
+                v-model="filters"
+              />
               V přírodě
             </label>
           </b-dropdown-text>
@@ -78,7 +105,12 @@
       <div id="checkboxesOutput">
         <div v-for="place in places" :key="place.name" class="outputContainer">
           <div class="outputCheckbox">
-            <input type="checkbox" :id="place.name" :value="place.name" v-model="selection" />
+            <input
+              type="checkbox"
+              :id="place.name"
+              :value="place.name"
+              v-model="selection"
+            />
           </div>
           <div class="wholeOutput">
             <label :for="place.name">
@@ -95,17 +127,20 @@
               :href="generateGoogleMapLink('walking')"
               target="_blank"
               class="outputButton"
-            >Idem pešo!</a>
+              >Idem pešo!</a
+            >
             <a
               :href="generateGoogleMapLink('transit')"
               target="_blank"
               class="outputButton"
-            >Idem MHD!</a>
+              >Idem MHD!</a
+            >
             <a
               :href="generateGoogleMapLink('driving')"
               target="_blank"
               class="outputButton"
-            >Idem autom!</a>
+              >Idem autom!</a
+            >
           </div>
         </div>
       </div>
@@ -117,23 +152,30 @@
   </div>
 </template>
 <script>
-import { cities } from "../placesData.js";
-import { places } from "../placesItinerary.js";
+import { db } from "../db";
+// import { cities } from "../placesData.js";
+// import { places } from "../placesItinerary.js";
 import Map from "./Map.vue";
 export default {
   name: "Search",
 
   props: {
     city: String,
-    msg: String
+    msg: String,
   },
   data() {
     return {
       filters: [],
-      cities: cities,
+      // cities: cities,
       selection: [],
-      selectedCity: this.city || ""
+      selectedCity: this.city || "",
+      firePlaces: [],
+      fireCities: [],
     };
+  },
+  firebase: {
+    firePlaces: db.ref("places"),
+    fireCities: db.ref("cities"),
   },
 
   methods: {
@@ -158,27 +200,27 @@ export default {
     },
     toggleFilter(filterName) {
       if (this.filters.includes(filterName)) {
-        this.filters = this.filters.filter(item => item !== filterName);
+        this.filters = this.filters.filter((item) => item !== filterName);
       } else {
         this.filters.push(filterName);
       }
-    }
+    },
   },
   computed: {
     places() {
-      return places
-        .filter(place => place.id == this.selectedCity)
-        .filter(place => {
-          return place.tag.some(tag => {
+      return this.firePlaces
+        .filter((place) => place.id == this.selectedCity)
+        .filter((place) => {
+          return place.tag.some((tag) => {
             return this.filters.includes(tag);
           });
         });
     },
     mapPlaces() {
-      return this.places.filter(place => this.selection.includes(place.name));
-    }
+      return this.places.filter((place) => this.selection.includes(place.name));
+    },
   },
-  components: { Map }
+  components: { Map },
 };
 </script>
 <style scoped>
