@@ -65,7 +65,7 @@ text-decoration: underline;
 .van {
   right: 20vw;
   position: absolute;
-  top: 75vh;
+  top: 90vh;
 }
 
 .alp {
@@ -78,7 +78,7 @@ text-decoration: underline;
 .case {
   right: 73vw;
   position: absolute;
-  top: 80vh;
+  top: 90vh;
 }
 .gyro {
   right: 0vw;

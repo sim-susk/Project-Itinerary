@@ -25,7 +25,7 @@ html,
 body {
   font-family: "Montserrat", sans-serif !important;
   background-color: rgb(254, 250, 242) !important;
-  color: #4b4b48 !important;
+  /* color: #4b4b48 !important; */
 }
 </style>
 

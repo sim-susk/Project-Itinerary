@@ -60,12 +60,17 @@ h3 {
  justify-content: center;
 }
 
+.search:hover , .plan:hover {
+  background-color: #4b4b48  !important;
+  border-color: #4b4b48 !important;
+}
+
 
 .search, .plan {
   background-color: #ec7568 !important;
   border-color: #ec7568 !important;
 text-transform: uppercase;
-padding: 5px !important;
+padding: 12px !important;
 font-size: 1.15em;
 }
 
@@ -101,6 +106,13 @@ font-size: 1.15em;
 
 @media screen and (max-width: 675px) {
   .photo, .pass, .plane, .globe {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 770px) {
+  .pass {
     display: none;
   }
   
