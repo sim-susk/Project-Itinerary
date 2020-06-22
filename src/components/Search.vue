@@ -95,17 +95,17 @@
               :href="generateGoogleMapLink('walking')"
               target="_blank"
               class="outputButton"
-            >Idem pešo!</a>
+            >Půjdeme pěšky!</a>
             <a
               :href="generateGoogleMapLink('transit')"
               target="_blank"
               class="outputButton"
-            >Idem MHD!</a>
+            >Pojedeme MHD!</a>
             <a
               :href="generateGoogleMapLink('driving')"
               target="_blank"
               class="outputButton"
-            >Idem autom!</a>
+            >Pojedeme autem!</a>
           </div>
         </div>
       </div>

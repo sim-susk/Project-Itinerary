@@ -53,14 +53,13 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   width: 100%;
   min-height: 150px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   border-radius: 20px 20px 0px 0;
-  background: linear-gradient(180deg, rgba(0,0,0,1) 14%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(180deg, #011123 20%, rgba(0,0,0,0) 100%);
 }
 .city a:hover {
   text-decoration: none;
@@ -79,7 +78,7 @@ export default {
   padding: 30px;
   border-radius: 20px;
   opacity: 0;
-  transition: opacity 0.4s;
+  transition: opacity 0.5s;
 
 }
 
@@ -105,17 +104,19 @@ img {
   margin: 20px;
 }
 
-@media screen and (min-width: 541px) and (max-width: 960px) {
+@media screen and (min-width: 660px) and (max-width: 1044px) {
   .city {
     align-items: center;
     width: calc(50% - 20px);
     margin: 8px;
+    
   }
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1045px) {
   .city {
-    width: calc(33% - 40px);
+    
+    width: calc(33% - 38px);
     justify-content: center;
   }
 }

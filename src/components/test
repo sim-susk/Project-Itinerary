@@ -1,22 +1,16 @@
 <template>
   <div class="home">
-   
-     <h1> Plánujete výlet a nevíte kam? </h1>
-      <h2 class="places">U nás najdete všechny krásy České republiky pohodlně na jednom místě.</h2>
-      <div id="btn--home">
-       <b-button class="search" pill variant="info">Nejdříve vyberu kam pojedu</b-button>
-      </div>
-      <h2 class="click">Stačí kliknout a my za vás pohodlně naplánujeme trasu.</h2>
-      <div id="btn-home">
-
-       <b-button class="plan" pill variant="info">Chci začít plánovat</b-button>
-      </div>
+    <p>
+      Plánujete výlet a nevíte kam?
+      <br />U nás najdete všechny krásy České republiky pohodlně na jednom místě.
+      <br />Stačí párkrát kliknout a my za vás pohodlně naplánujeme trasu.
+    </p>
+    <br />
 
     <img class="img-menu photo" :src="`./assets/img/bgr-img (7).png`" />
     <img class="img-menu case" :src="`./assets/img/bgr-img (1).png`" />
     <img class="img-menu globe" :src="`./assets/img/bgr-img (8).png`" />
     <img class="img-menu pass" :src="`./assets/img/bgr-img (3).png`" />
-
   </div>
 </template>
 
@@ -26,7 +20,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
 .home {
   background-color: rgb(254, 250, 242);
   /* position: absolute; */
@@ -34,36 +28,7 @@ export default {
   width: 100vw;
 }
 
-h1, h2 {
-  color: #4b4b48 !important;
-padding: 30px; 
- 
-  text-align: center;
-
-}
-
-#btn-home, #btn--home {
-  display: flex; 
- justify-content: center;
-}
-
-
-.search, .plan {
-  background-color: #ec7568 !important;
-  border-color: #ec7568 !important;
-  
-
-
-/* justify-content: center;
-display: flex; */
-}
-
-/* .plan {
-  background-color: #78c58a !important;
-  border-color: ##78c58a !important;
-} */
-
-/* .home p {
+.home p {
   position: relative;
   text-align: justify;
   padding: 30px;
@@ -72,7 +37,7 @@ display: flex; */
   border-radius: 20px;
   box-shadow: 22px 23px 29px -9px rgba(0, 0, 0, 0.67);
   color: rgba(0, 0, 0, 0.67) !important;
-} */
+}
 
 .case {
   left: 10vw;

@@ -18,7 +18,7 @@
 
           <b-nav-item-dropdown text="Přehled měst" right class="navbar-text">
             <b-dropdown-item to="/places/all">Zobraz vše</b-dropdown-item>
-            <b-dropdown-item to="/places/region">Hledej podle krajů</b-dropdown-item>
+            <b-dropdown-item to="/places/recommend">Doporučujeme</b-dropdown-item>
             <b-dropdown-item to="/places/top5">Top 5</b-dropdown-item>
             <b-dropdown-item to="/places/travelWW">Cestujeme světově</b-dropdown-item>
           </b-nav-item-dropdown>
@@ -38,7 +38,9 @@ export default {
 };
 </script>
 
-<style>
+<style >
+
+
 .navbar {
   margin: 0;
   padding: 0;
@@ -50,10 +52,13 @@ export default {
   padding: 0;
 }
 
-.navbar-text {
+li.navbar-text {
   font-weight: bold;
+  color: #67696d !important;
 }
-
+.navbar-light .navbar-nav .nav-link {
+    color: #67696d !important;
+}
 .img-menu {
   width: 120px;
   height: 100px;
@@ -64,8 +69,9 @@ export default {
 }
 
 .nav-item:hover li {
-  color: #4b4b48 !important;
+  color: #999b9f !important;
 }
+
 .nav-item {
   padding: 0 5px;
   border-right: 1px #67696d solid;

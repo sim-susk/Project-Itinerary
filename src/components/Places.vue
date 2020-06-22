@@ -41,9 +41,9 @@ export default {
     if (this.placeType === "top5") {
       myTitle = "Nejkrásnějších pět měst České Republiky"
       myCities = myCities.filter((city) => city.tags === "top5")
-    } else if (this.placeType === "region") {
-      myTitle = "To nejzajímavější v kraji"
-      myCities = myCities.filter((city) => city.tags === "region")
+    } else if (this.placeType === "recommend") {
+      myTitle = "Doporučujeme"
+      myCities = myCities.filter((city) => city.tags === "recommend")
     } else if (this.placeType === "travelWW") {
       myTitle = "Světové destinace v České Republice"
       myCities = myCities.filter((city) => city.tags === "travelWW")
@@ -60,8 +60,8 @@ export default {
 
 <style scoped>
 .places h5 {
-  background-color: grey;
-  color: rgb(253, 250, 242);
+  background-color: #031529;;
+  color: #fdfdfe;
   height: auto;
   width: calc(100vw - 25px);
   text-align: center;
@@ -75,20 +75,21 @@ export default {
   background-color: rgb(254, 250, 242);
 }
 
-@media screen and (min-width: 541px) and (max-width: 960px) {
+@media screen and (min-width: 660px) and (max-width: 1044px) {
   .places {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1045px) {
   .places {
-    /* display: flex; */
-    padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    /* margin: 20px; barva */
   }
 }
+  
+
+
+
 </style>
