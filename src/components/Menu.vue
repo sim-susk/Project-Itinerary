@@ -78,9 +78,7 @@ li.navbar-text {
   color: #999b9f !important;
 }
 
-/* .dropdown-item:hover li{
-  color: #999b9f !important;
-} */
+
 
 .nav-item {
   padding: 0 5px;

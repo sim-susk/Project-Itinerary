@@ -63,42 +63,38 @@ text-decoration: underline;
 }
 
 .van {
-  right: 20vw;
-  position: absolute;
-  top: 90vh;
+     right: 180px;
+    position: absolute;
+    top: 500px;
 }
 
 .alp {
-  right: 60vw;
-  position: absolute;
-  top: 20vh;
+     right: 450px;
+    position: absolute;
+    top: 150px;
   
 }
 
 .case {
-  right: 73vw;
-  position: absolute;
-  bottom: -20vh;
+      left: 100px;
+    position: absolute;
+    top: 550px;
 }
 .gyro {
-  right: 0vw;
-  position: absolute;
-  top: 16vh;
+  right: 10px;
+    position: absolute;
+    top: 100px;
 }
 
 
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 860px) {
   .case, .van, .alp, .gyro {
     display: none;
   }
 }
 
-@media screen and (max-width: 820px) {
-  .case, {
-    display: none;
-  }
-}
+
 
 
 
