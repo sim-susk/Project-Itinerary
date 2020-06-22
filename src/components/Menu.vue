@@ -18,13 +18,20 @@
 
           <b-nav-item-dropdown text="Přehled měst" right class="navbar-text">
             <b-dropdown-item to="/places/all">Zobraz vše</b-dropdown-item>
-            <b-dropdown-item to="/places/recommend">Doporučujeme</b-dropdown-item>
+            <b-dropdown-item to="/places/recommend"
+              >Doporučujeme</b-dropdown-item
+            >
             <b-dropdown-item to="/places/top5">Top 5</b-dropdown-item>
-            <b-dropdown-item to="/places/travelWW">Cestujeme světově</b-dropdown-item>
+            <b-dropdown-item to="/places/travelWW"
+              >Cestujeme světově</b-dropdown-item
+            >
           </b-nav-item-dropdown>
 
-          <b-nav-item to="/itinerary/" id="noBorder">
+          <b-nav-item to="/itinerary/">
             <b-nav-text>Plánovač</b-nav-text>
+          </b-nav-item>
+          <b-nav-item to="/addPlace/" id="noBorder">
+            <b-nav-text>Pridat miesto</b-nav-text>
           </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
@@ -34,13 +41,11 @@
 
 <script>
 export default {
-  name: "Menu"
+  name: "Menu",
 };
 </script>
 
-<style >
-
-
+<style>
 .navbar {
   margin: 0;
   padding: 0;
@@ -57,7 +62,7 @@ li.navbar-text {
   color: #67696d !important;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: #67696d !important;
+  color: #67696d !important;
 }
 .img-menu {
   width: 120px;
@@ -65,7 +70,7 @@ li.navbar-text {
 }
 
 .menuButtons {
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .nav-item:hover li {

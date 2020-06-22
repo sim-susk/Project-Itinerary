@@ -1,9 +1,7 @@
 <template>
   <div class="places">
-    
-   
-    <h5> {{pageData.myTitle }}</h5>
-  
+    <h5>{{ pageData.myTitle }}</h5>
+
     <City
       v-for="(city, index) in pageData.myCities"
       :key="index"
@@ -20,47 +18,55 @@
 
 <script>
 import City from "./City";
-
-import { cities } from "../placesData.js";
+import { db } from "../db";
+// import { cities } from "../placesData.js";
 // import AboutUsVue from './AboutUs.vue';
 
 export default {
   name: "Places",
   components: {
-    City: City
+    City: City,
+  },
+  data() {
+    return {
+      fireCities: [],
+    };
+  },
+  firebase: {
+    fireCities: db.ref("cities"),
   },
   computed: {
     placeType() {
-      return this.$route.params.placeType
+      return this.$route.params.placeType;
     },
 
-  pageData() {
-    let myTitle = "Zajímavé destinace v České Republice"
-    let myCities = cities
+    pageData() {
+      let myTitle = "Zajímavé destinace v České Republice";
+      let myCities = this.fireCities;
 
-    if (this.placeType === "top5") {
-      myTitle = "Nejkrásnějších pět měst České Republiky"
-      myCities = myCities.filter((city) => city.tags === "top5")
-    } else if (this.placeType === "recommend") {
-      myTitle = "Doporučujeme"
-      myCities = myCities.filter((city) => city.tags === "recommend")
-    } else if (this.placeType === "travelWW") {
-      myTitle = "Světové destinace v České Republice"
-      myCities = myCities.filter((city) => city.tags === "travelWW")
-    } 
+      if (this.placeType === "top5") {
+        myTitle = "Nejkrásnějších pět měst České Republiky";
+        myCities = myCities.filter((city) => city.tags === "top5");
+      } else if (this.placeType === "recommend") {
+        myTitle = "Doporučujeme";
+        myCities = myCities.filter((city) => city.tags === "recommend");
+      } else if (this.placeType === "travelWW") {
+        myTitle = "Světové destinace v České Republice";
+        myCities = myCities.filter((city) => city.tags === "travelWW");
+      }
 
-    return {
-      myTitle: myTitle,
-      myCities: myCities,
-    };
-  }
-  }
+      return {
+        myTitle: myTitle,
+        myCities: myCities,
+      };
+    },
+  },
 };
 </script>
 
 <style scoped>
 .places h5 {
-  background-color: #031529;;
+  background-color: #031529;
   color: #fdfdfe;
   height: auto;
   width: calc(100vw - 25px);
@@ -88,8 +94,4 @@ export default {
     flex-wrap: wrap;
   }
 }
-  
-
-
-
 </style>

@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Itinerary from './components/Itinerary';
 import Places from './components/Places';
 import App from './components/App';
+import AddPlace from './components/AddPlace';
 import PageNotFound from './components/PageNotFound';
 
 import './index.html';
@@ -13,10 +14,12 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import * as GmapVue from 'gmap-vue'
+import { rtdbPlugin } from 'vuefire'
 
 Vue.use(IconsPlugin)
 Vue.use(BootstrapVue)
-Vue.use(VueRouter);
+Vue.use(VueRouter)
+Vue.use(rtdbPlugin)
 
 Vue.use(GmapVue, {
   load: {
@@ -35,7 +38,7 @@ const router = new VueRouter({
     { path: '/itinerary/:id', component: Itinerary },
     { path: '/places/:placeType', component: Places },
     { path: '/places', component: Places },
-    
+    { path: '/addPlace', component: AddPlace },
     { path: '*', component: PageNotFound }
   ],
 });
