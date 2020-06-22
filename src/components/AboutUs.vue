@@ -78,28 +78,28 @@ text-decoration: underline;
 .case {
   right: 73vw;
   position: absolute;
-  top: 90vh;
+  bottom: -20vh;
 }
 .gyro {
   right: 0vw;
   position: absolute;
-  top: 24vh;
+  top: 16vh;
 }
 
 
 
-@media screen and (max-width: 730px) {
-  .case, .van {
+@media screen and (max-width: 670px) {
+  .case, .van, .alp, .gyro {
     display: none;
   }
 }
 
-@media screen and (max-width: 640px) {
-  
-.alp {
-  display: none;
+@media screen and (max-width: 820px) {
+  .case, {
+    display: none;
+  }
 }
-}
+
 
 
 </style>

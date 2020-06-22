@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <p class="formIntro">
-      Pokud by jste se chtěli podělit o zajímavé město, které stojí za to
+      Pokud by jste se chtěli podělit o zajímavé místo, které stojí za to
       navštívit a na naší stránce by nemělo chybět, prosíme vyplňte následující
       formulář:
     </p>

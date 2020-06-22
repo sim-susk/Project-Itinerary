@@ -112,7 +112,7 @@ font-size: 1.15em;
 }
 
 @media screen and (max-width: 770px) {
-  .pass {
+  .pass, .globe  {
     display: none;
   }
   
