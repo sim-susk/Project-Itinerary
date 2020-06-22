@@ -31,7 +31,7 @@
             <b-nav-text>Plánovač</b-nav-text>
           </b-nav-item>
           <b-nav-item to="/addPlace/" id="noBorder">
-            <b-nav-text>Pridat miesto</b-nav-text>
+            <b-nav-text>Přidat město</b-nav-text>
           </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
@@ -73,7 +73,7 @@ li.navbar-text {
   font-size: 16px;
 }
 
-.nav-item:hover li {
+.nav-item:hover li, .nav-item:hover span {
   color: #999b9f !important;
 }
 
