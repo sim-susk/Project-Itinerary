@@ -205,6 +205,7 @@ export default {
 }
 .margin {
   margin: 5px;
+  margin-left: 15px;
 }
 #checkboxes,
 #checkboxesOutput {
@@ -243,6 +244,9 @@ export default {
 
 hr {
   margin-right: 30px;
+}
+.wholeOutput p {
+  padding-right: 15px;
 }
 @media screen and (max-width: 790px) {
   #checkboxes {
