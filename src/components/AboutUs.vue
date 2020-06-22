@@ -11,10 +11,12 @@
       chcete navštívit a následně se trasa vykreslí a přehledně zobrazí na mapě. Využijte i další tlačítka, díky nim si můžete výlet naplánovat pěšky, autem, či využijete městskou hromadnou dopravu.
     </p>
 
-    <img class="img-menu van" :src="`./assets/img/bgr-img (2).png`" />
+<img class="img-menu case" :src="`./assets/img/bgr-img (1).png`" />
+
+<img class="img-menu van" :src="`./assets/img/bgr-img (2).png`" />
+   
 
     <img class="img-menu alp" :src="`./assets/img/bgr-img (4).png`" />
-    <img class="img-menu plane" :src="`./assets/img/bgr-img (5).png`" />
     <img class="img-menu gyro" :src="`./assets/img/bgr-img (6).png`" />
   </div>
 </template>
@@ -36,9 +38,15 @@ text-decoration: underline;
   font-weight: bold;
 }
 
+.van {
+    right: 43vw;
+    position: absolute;
+    top: 82vh;
+    
+}
+
 .aboutUs {
   background-color: rgb(254, 250, 242);
-  /* position: absolute; */
   min-height: 100vh;
 }
 
@@ -50,8 +58,8 @@ text-decoration: underline;
   background-color: #bcdde2;
   border-radius: 20px;
   box-shadow: 22px 23px 29px -9px rgba(0, 0, 0, 0.67);
-  color: rgba(0, 0, 0, 0.67) !important;
-  
+  color: rgba(0, 0, 0, 1.67) !important;
+  font-size: 1.2em;
 }
 
 .van {
@@ -61,43 +69,37 @@ text-decoration: underline;
 }
 
 .alp {
-  right: 75vw;
+  right: 60vw;
   position: absolute;
-  top: 85vh;
+  top: 20vh;
+  
 }
 
-.plane {
-  right: 50vw;
+.case {
+  right: 73vw;
   position: absolute;
-  top: 25vh;
+  top: 80vh;
 }
 .gyro {
   right: 0vw;
   position: absolute;
-  top: 32vh;
-}
-.point {
-  right: 10vw;
-  position: absolute;
-  bottom: 0vh;
+  top: 24vh;
 }
 
 
-@media screen and (max-width: 590px) {
-  .van {
+
+@media screen and (max-width: 730px) {
+  .case, .van {
     display: none;
   }
-  
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 640px) {
+  
 .alp {
-    display: none;
-  }
+  display: none;
+}
 }
 
-/* PC */
-@media screen and (m-width: 961px) {
-  
-}
+
 </style>

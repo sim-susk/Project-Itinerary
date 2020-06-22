@@ -1,23 +1,27 @@
 <template>
-  <div class="home">
-   
-     <h1> Plánujete výlet a nevíte kam? </h1>
-      <h2 class="places">U nás najdete všechny krásy České republiky pohodlně na jednom místě.</h2>
-      <div id="btn--home">
-       <b-button class="search" pill variant="info">Nejdříve vyberu kam pojedu</b-button>
-      </div>
-      <h2 class="click">Stačí kliknout a my za vás pohodlně naplánujeme trasu.</h2>
-      <div id="btn-home">
+<div class="home">
+  <h1 class="title"> Cestovní itinerář </h1>
+  <h2> Plánujete výlet a nevíte kam? </h2>
+  <h3>U nás najdete všechny krásy České republiky pohodlně na jednom místě.</h3>
+    <div id="btn--home">
+      <router-link to="/places/all">
+        <b-button class="search" pill variant="info">Nejdříve vyberu kam pojedu</b-button>
+      </router-link>
+    </div>
+  <h3>Stačí kliknout a my za vás pohodlně naplánujeme trasu.</h3>
+    <div id="btn-home">
+      <router-link to="/itinerary">
+        <b-button class="plan" pill variant="info">Chci začít plánovat</b-button>
+      </router-link>
+    </div>
 
-       <b-button class="plan" pill variant="info">Chci začít plánovat</b-button>
-      </div>
+<img class="img-menu photo" :src="`./assets/img/bgr-img (7).png`" />
+<img class="img-menu pass" :src="`./assets/img/bgr-img (3).png`" />
+<img class="img-menu globe" :src="`./assets/img/bgr-img (8).png`" />
 
-    <img class="img-menu photo" :src="`./assets/img/bgr-img (7).png`" />
-    <img class="img-menu case" :src="`./assets/img/bgr-img (1).png`" />
-    <img class="img-menu globe" :src="`./assets/img/bgr-img (8).png`" />
-    <img class="img-menu pass" :src="`./assets/img/bgr-img (3).png`" />
+<img class="img-menu plane" :src="`./assets/img/bgr-img (5).png`" />
 
-  </div>
+</div>
 </template>
 
 <script>
@@ -34,12 +38,21 @@ export default {
   width: 100vw;
 }
 
-h1, h2 {
-  color: #4b4b48 !important;
-padding: 30px; 
- 
-  text-align: center;
+.title {
+font-family: 'Pacifico', cursive;
+text-align: center;
+font-size: 5em;
+}
 
+h1, h2, h3 {
+  color: #4b4b48 !important;
+padding: 20px; 
+ font-size: 1.5em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 #btn-home, #btn--home {
@@ -51,59 +64,46 @@ padding: 30px;
 .search, .plan {
   background-color: #ec7568 !important;
   border-color: #ec7568 !important;
-  
-
-
-/* justify-content: center;
-display: flex; */
+text-transform: uppercase;
+padding: 5px !important;
+font-size: 1.15em;
 }
 
-/* .plan {
-  background-color: #78c58a !important;
-  border-color: ##78c58a !important;
-} */
-
-/* .home p {
-  position: relative;
-  text-align: justify;
-  padding: 30px;
-  margin: 130px 40px 0 40px;
-  background-color: #bcdde2;
-  border-radius: 20px;
-  box-shadow: 22px 23px 29px -9px rgba(0, 0, 0, 0.67);
-  color: rgba(0, 0, 0, 0.67) !important;
-} */
-
-.case {
-  left: 10vw;
-  position: absolute;
-  bottom: 15vh;
-}
 
 .globe {
-  right: 0vw;
+  left: 67vw;
   position: absolute;
-  top: 30vh;
+  top: 78vh;
+ 
+}
+
+
+
+.plane {
+  right: 4vw;
+  position: absolute;
+  top: 35vh;
+ 
 }
 .photo {
-  right: 5vw;
+  right: 75vw;
   position: absolute;
-  bottom: 20vh;
+  bottom: 0vh;
+
 }
 
 .pass {
-  right: 50vw;
+  left: 7vw;
   position: absolute;
-  top: 25vh;
+  top: 35vh;
+ 
 }
 
-@media screen and (max-width: 390px) {
-  .photo {
+@media screen and (max-width: 675px) {
+  .photo, .pass, .plane, .globe {
     display: none;
   }
-  .case {
-    display: none;
-  }
+  
 }
 
 /* PC */
