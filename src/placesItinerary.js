@@ -85,7 +85,7 @@ export const places = [
     longitude: 15.287148,
     outputName: "Solná jeskyně",
     outputAddress: "Čáslavská 28401, Karlov, 284 01 Kutná Hora",
-    outputDescription: "Vydejte se za mořským klimatem a nemusíte cestovat přes půlku Evropy. Solí prosycené minerály, nabízejí obdobný požitek jako v přímořských destinacích.",
+    outputDescription: "Vydejte se za mořským klimatem a nemusíte cestovat přes půlku Evropy. Solí prosycené minerály nabízejí obdobný požitek jako v přímořských destinacích.",
   },
   {
     id: "kutnahora",
@@ -129,7 +129,7 @@ export const places = [
     longitude: 15.268665,
     outputName: "Po vinicích na kole",
     outputAddress: "Palackého nám., 284 01 Kutná Hora",
-    outputDescription: "Popis trasy: 4,835 km; cyklotrasa č. 0091. Naučná cyklotrasa vás zavede ze srdce Kutné Hory, vinicemi až na severní okraj města. Ideální pro milovníky dobrého vína a zdravého pohybu.",
+    outputDescription: "Popis trasy: 4,835 km; cyklotrasa č. 0091. Naučná cyklotrasa vás zavede ze srdce Kutné Hory vinicemi až na severní okraj města. Ideální pro milovníky dobrého vína a zdravého pohybu.",
   },
   {
     id: "kutnahora",
