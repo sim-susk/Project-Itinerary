@@ -167,7 +167,7 @@ export default {
         autoHideDelay: 5000,
         variant: "success",
       });
-      // db.ref("places").push(this.form);
+      db.ref("places").push(this.form);
     },
   },
   computed: {
