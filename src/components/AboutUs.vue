@@ -2,12 +2,12 @@
   <div class="aboutUs">
     <p>
       Tato stránka vám v jednoduchých krocích pomůže naplánovat trasu a vytvořit
-      vlastní itinerář cesty do vybraného místa v České Reublice.
+      vlastní itinerář cesty do vybraného místa v České republice.
       <br>
       Jako uživatel
       si nejprve vyberte cílovou destinaci, kam chcete jet. K tomu může
-      posloužit <router-link to="/places/all">přehled měst</router-link> v menu v hlavičče stránky. Když už
-      víte kam zamíří vše kroky, naplánujte si vlastní itinerář <router-link to="/itinerary">zde.</router-link> Do formuláře pak už jen stačí zakliknout body - místa, která
+      posloužit <router-link to="/places/all">přehled měst</router-link> v menu v hlavičce stránky. Když už
+      víte kam zamíří vaše kroky, naplánujte si vlastní itinerář <router-link to="/itinerary">zde.</router-link> Do formuláře pak už jen stačí zakliknout body - místa, která
       chcete navštívit a následně se trasa vykreslí a přehledně zobrazí na mapě. Využijte i další tlačítka, díky nim si můžete výlet naplánovat pěšky, autem, či využijete městskou hromadnou dopravu.
     </p>
 
@@ -63,42 +63,38 @@ text-decoration: underline;
 }
 
 .van {
-  right: 20vw;
-  position: absolute;
-  top: 90vh;
+     right: 180px;
+    position: absolute;
+    top: 500px;
 }
 
 .alp {
-  right: 60vw;
-  position: absolute;
-  top: 20vh;
+     right: 450px;
+    position: absolute;
+    top: 150px;
   
 }
 
 .case {
-  right: 73vw;
-  position: absolute;
-  bottom: -20vh;
+      left: 100px;
+    position: absolute;
+    top: 550px;
 }
 .gyro {
-  right: 0vw;
-  position: absolute;
-  top: 16vh;
+  right: 10px;
+    position: absolute;
+    top: 100px;
 }
 
 
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 860px) {
   .case, .van, .alp, .gyro {
     display: none;
   }
 }
 
-@media screen and (max-width: 820px) {
-  .case, {
-    display: none;
-  }
-}
+
 
 
 

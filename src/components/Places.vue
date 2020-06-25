@@ -39,17 +39,17 @@ export default {
     },
 
     pageData() {
-      let myTitle = "Zajímavé destinace v České Republice";
+      let myTitle = "Zajímavé destinace v České republice";
       let myCities = this.fireCities;
 
       if (this.placeType === "top5") {
-        myTitle = "Nejkrásnějších pět měst České Republiky";
+        myTitle = "Nejkrásnějších pět měst České republiky";
         myCities = myCities.filter((city) => city.tags === "top5");
       } else if (this.placeType === "recommend") {
         myTitle = "Doporučujeme";
         myCities = myCities.filter((city) => city.tags === "recommend");
       } else if (this.placeType === "travelWW") {
-        myTitle = "Světové destinace v České Republice";
+        myTitle = "Světové destinace v České republice";
         myCities = myCities.filter((city) => city.tags === "travelWW");
       }
 

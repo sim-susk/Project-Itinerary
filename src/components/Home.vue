@@ -33,7 +33,6 @@ export default {
 <style scoped>
 .home {
   background-color: rgb(254, 250, 242);
-  /* position: absolute; */
   min-height: 100vh;
   width: 100vw;
 }
@@ -76,54 +75,40 @@ font-size: 1.15em;
 
 
 .globe {
-  left: 67vw;
-  position: absolute;
-  top: 78vh;
+  right: 60px;
+    position: absolute;
+    top: 390px;
  
 }
 
 
 
 .plane {
-  right: 4vw;
-  position: absolute;
-  top: 35vh;
+  right: 30px;
+    position: absolute;
+    top: 230px;
  
 }
 .photo {
-  right: 75vw;
-  position: absolute;
-  bottom: 0vh;
+ left: 40px;
+    position: absolute;
+    top: 520px;
 
 }
 
 .pass {
-  left: 7vw;
-  position: absolute;
-  top: 35vh;
+      left: 10px;
+    position: absolute;
+    top: 240px;
  
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 860px) {
   .photo, .pass, .plane, .globe {
     display: none;
   }
   
 }
 
-@media screen and (max-width: 770px) {
-  .pass, .globe  {
-    display: none;
-  }
-  
-}
 
-/* PC */
-/* @media screen and (max-width: 961px) {
-  .home .p {
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-  }
-} */
 </style>
